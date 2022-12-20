@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>W-Wave Radio</title>
+  <script defer src="./js/main.js"></script>
+  <link type="image/x-icon" href="img/favicon.ico" rel="shortcut icon">
+  <link type="Image/x-icon" href="img/favicon.ico" rel="icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.2/dist/accordion.min.css" />
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <script src="https://unpkg.com/accordion-js@3.3.2/dist/accordion.min.js"></script>
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+
+  <header class="header" aria-label="шапка сайта">
+    <div class="header__part1 container flex">
+      <div class="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="conteiner-logo">
+        <a href="#" class="header__logo-link">
+          <img src="img/logo.svg" class="header__logo-img" alt="логотип фирмы">
+        </a>
+      </div>
+      <div class="menu-container flex">
+        <nav class="menu flex">
+          <ul class="menu__list-items list-reset flex">
+            <li class="menu__item">
+              <a class="menu__link" href="#about">Подкасты</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#about">Передачи</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#about">Гости</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#about">Плейлисты</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#about">О нас</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="container-search">
+          <button aria-label="искать" type="button" class="search-form__icon-link-visible btn-reset">
+            <svg class="search-form__icon search-form__icon-visible" width="24" height="24" viewBox="0 0 24 24"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M20.9999 21L16.6499 16.65" stroke="#6D31EE" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+
+          <form class="search-form">
+            <input aria-label="введите данные для поиска" class="search-form__input" type="search"
+              placeholder="Что будем искать?">
+            <button aria-label="найти" type="button" class="search-form__icon-link_active btn-reset">
+              <svg class="search-form__icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect width="7.56126" height="1.89031"
+                  transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)" fill="#333333" />
+                <path
+                  d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z"
+                  stroke="#333333" stroke-width="2" />
+              </svg>
+            </button>
+            <button aria-label="закрыть поле поиска" type="button" class="search-form__icon-link_close btn-reset">
+              <svg class="search-form__icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect x="8.95386" y="7.30435" width="11.6645" height="2.33291" transform="rotate(45 8.95386 7.30435)"
+                  fill="#999999" />
+                <rect x="7.30432" y="15.5524" width="11.6645" height="2.33291" transform="rotate(-45 7.30432 15.5524)"
+                  fill="#999999" />
+                <circle cx="12" cy="12" r="11" stroke="#999999" stroke-width="2" />
+              </svg>
+            </button>
+          </form>
+        </div>
+        <button class="btn-reset header__btn">
+          Вход
+        </button>
+      </div>
+    </div>
+    <div class="header__part2">
+      <div class="submenu container flex">
+        <ul class="header__submenu-list list-reset flex">
+          <li class="header__submenu-item">
+            <a href="#" class="header__submenu-link">
+              Новости
+            </a>
+          </li>
+          <li class="header__submenu-item">
+            <a href="#" class="header__submenu-link">
+              Блоги
+            </a>
+          </li>
+          <li class="header__submenu-item">
+            <a href="#" class="header__submenu-link">
+              Топы
+            </a>
+          </li>
+          <li class="header__submenu-item">
+            <a href="#" class="header__submenu-link">
+              Опросы
+            </a>
+          </li>
+          <li class="header__submenu-item">
+            <a href="#" class="header__submenu-link">
+              Рейтинги
+            </a>
+          </li>
+          <li class="header__submenu-item">
+            <a href="#" class="header__submenu-link">
+              Реклама
+            </a>
+          </li>
+        </ul>
+        <div class="submenu__btns-container flex">
+          <div class="submenu__earlier-on-air submenu__item flex">
+
+            <button class="btn-reset submenu__btn">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z"
+                  fill="#A1A6B4" />
+              </svg></button>
+
+            <div class="submenu__text-container">
+              <p class="submenu__btn-descr">
+                Ранее в эфире
+              </p>
+              <p class="submenu__btn-title">
+                «Музыка»
+              </p>
+            </div>
+          </div>
+          <div class="submenu__on-air-now submenu__item flex">
+
+            <button class="btn-reset submenu__btn">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z"
+                  fill="#A1A6B4" />
+              </svg></button>
+            <div class="submenu__text-container">
+              <p class="submenu__btn-descr">
+                Сейчас в эфире
+              </p>
+              <p class="submenu__btn-title">
+                «Как так?»
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="submenu__age" aria-label="возрастное ограничение 12+"></div>
+      </div>
+    </div>
+  </header>
+  <main class="main" aria-label="основной контент сайта">
+    <section class="hero">
+      <div class="container">
+        <div class="hero__content row">
+          <div class="hero__text-container col-xxl-7 col-xl-7 col-lg-7 col-md-12">
+            <h1 class="hero__title">
+              <b>Радио</b> W-Wawe
+            </h1>
+            <p class="hero__descr">
+              Привет, на&nbsp;связи W-Wawe! Раньше мы&nbsp;были
+              изданием, а&nbsp;теперь пробуем себя в&nbsp;разоворном
+              жанре. Говорим о&nbsp;музыке, политике, истории,
+              науке и&nbsp;культуре. Здесь, помимо прямого
+              эфира&nbsp;&mdash; архив передач и&nbsp;многое другое:)
+            </p>
+            <a href="#" class="hero__btn btn-reset">
+              Слушать эфир
+            </a>
+          </div>
+          <div class="hero__img-container col-xxl-4 col-xl-4 col-lg-4"></div>
+        </div>
+      </div>
+    </section>
+    <section class="podcasts section-offset">
+      <div class="container">
+        <h2 class="podcasts__title section__title">
+          Подкасты
+        </h2>
+        <div class="row podcasts__container">
+          <ul class="podcasts__list list-reset flex">
+            <li class="podcasts__item col-md-12 col-lg-6 podcasts__img1">
+              <p class="podcasts__date">
+                14&nbsp;июня
+              </p>
+              <div class="podcasts__info-text">
+                <p class="podcasts__time">
+                  15:43
+                </p>
+                <p class="podcasts__name">
+                  Европа. XIX век
+                </p>
+                <p class="podcasts__author">
+                  Дмитрий Гутенберг
+                </p>
+                <button class="podcasts__btn-listen btn-reset">
+                  <svg class="podcasts__btn-img" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                    <path
+                      d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
+                      fill="#A1A6B4" />
+                  </svg>
+                </button>
+              </div>
+              <div class="podcasts__social-activity flex">
+                <ul class="podcasts__social-list list-reset flex">
+                  <li class="podcasts__social__item podcasts__plays">
+                    258
+                  </li>
+                  <li class="podcasts__social__item podcasts__likes">
+                    104
+                  </li>
+                  <li class="podcasts__social__item podcasts__shared-the-link">
+                    68
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="podcasts__item col-md-12 col-lg-6 podcasts__img2">
+              <p class="podcasts__date">
+                8&nbsp;июня
+              </p>
+              <div class="podcasts__info-text">
+                <p class="podcasts__time">
+                  8:54
+                </p>
+                <p class="podcasts__name">
+                  Люди сегодня
+                </p>
+                <p class="podcasts__author">
+                  Анна Васильева
+                </p>
+                <button class="podcasts__btn-listen btn-reset">
+                  <svg class="podcasts__btn-img" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                    <path
+                      d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
+                      fill="#A1A6B4" />
+                  </svg>
+                </button>
+              </div>
+              <div class="podcasts__social-activity flex">
+                <ul class="podcasts__social-list list-reset flex">
+                  <li class="podcasts__social__item podcasts__plays">
+                    104
+                  </li>
+                  <li class="podcasts__social__item podcasts__likes">
+                    54
+                  </li>
+                  <li class="podcasts__social__item podcasts__shared-the-link">
+                    42
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="podcasts__item col-md-12 col-lg-6 podcasts__img3">
+              <p class="podcasts__date">
+                2&nbsp;июня
+              </p>
+              <div class="podcasts__info-text">
+                <p class="podcasts__time">
+                  7:03
+                </p>
+                <p class="podcasts__name">
+                  Обо всём
+                </p>
+                <p class="podcasts__author">
+                  Пётр Дмитриевский
+                </p>
+                <button class="podcasts__btn-listen btn-reset">
+                  <svg class="podcasts__btn-img" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                    <path
+                      d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
+                      fill="#A1A6B4" />
+                  </svg>
+                </button>
+              </div>
+              <div class="podcasts__social-activity flex">
+                <ul class="podcasts__social-list list-reset flex">
+                  <li class="podcasts__social__item podcasts__plays">
+                    64
+                  </li>
+                  <li class="podcasts__social__item podcasts__likes">
+                    30
+                  </li>
+                  <li class="podcasts__social__item podcasts__shared-the-link">
+                    8
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="podcasts__item col-md-12 col-lg-6 podcasts__img4">
+              <p class="podcasts__date">
+                22&nbsp;мая
+              </p>
+              <div class="podcasts__info-text">
+                <p class="podcasts__time">
+                  16:04
+                </p>
+                <p class="podcasts__name">
+                  Источник звука
+                </p>
+                <p class="podcasts__author">
+                  Пётр Дмитриевский
+                </p>
+                <button class="podcasts__btn-listen btn-reset">
+                  <svg class="podcasts__btn-img" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                    <path
+                      d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
+                      fill="#A1A6B4" />
+                  </svg>
+                </button>
+              </div>
+              <div class="podcasts__social-activity flex">
+                <ul class="podcasts__social-list list-reset flex">
+                  <li class="podcasts__social__item podcasts__plays">
+                    55
+                  </li>
+                  <li class="podcasts__social__item podcasts__likes">
+                    20
+                  </li>
+                  <li class="podcasts__social__item podcasts__shared-the-link">
+                    12
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="podcasts__item col-md-12 col-lg-6 podcasts__img5">
+              <p class="podcasts__date">
+                11&nbsp;июня
+              </p>
+              <div class="podcasts__info-text">
+                <p class="podcasts__time">
+                  5:32
+                </p>
+                <p class="podcasts__name">
+                  О музыке
+                </p>
+                <p class="podcasts__author">
+                  Дмитрий Гутенберг
+                </p>
+                <button class="podcasts__btn-listen btn-reset">
+                  <svg class="podcasts__btn-img" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                    <path
+                      d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
+                      fill="#A1A6B4" />
+                  </svg>
+                </button>
+              </div>
+              <div class="podcasts__social-activity flex">
+                <ul class="podcasts__social-list list-reset flex">
+                  <li class="podcasts__social__item podcasts__plays">
+                    207
+                  </li>
+                  <li class="podcasts__social__item podcasts__likes">
+                    34
+                  </li>
+                  <li class="podcasts__social__item podcasts__shared-the-link">
+                    18
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="podcasts__item col-md-12 col-lg-6 podcasts__img6">
+              <p class="podcasts__date">
+                5&nbsp;июня
+              </p>
+              <div class="podcasts__info-text">
+                <p class="podcasts__time">
+                  9:04
+                </p>
+                <p class="podcasts__name">
+                  Хэллоу, Африка!
+                </p>
+                <p class="podcasts__author">
+                  Пётр Дмитриевский
+                </p>
+                <button class="podcasts__btn-listen btn-reset">
+                  <svg class="podcasts__btn-img" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                    <path
+                      d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
+                      fill="#A1A6B4" />
+                  </svg>
+                </button>
+              </div>
+              <div class="podcasts__social-activity flex">
+                <ul class="podcasts__social-list list-reset flex">
+                  <li class="podcasts__social__item podcasts__plays">
+                    87
+                  </li>
+                  <li class="podcasts__social__item podcasts__likes">
+                    44
+                  </li>
+                  <li class="podcasts__social__item podcasts__shared-the-link">
+                    5
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="podcasts__item col-md-12 col-lg-6 podcasts__img7">
+              <p class="podcasts__date">
+                28&nbsp;мая
+              </p>
+              <div class="podcasts__info-text">
+                <p class="podcasts__time">
+                  9:15
+                </p>
+                <p class="podcasts__name">
+                  Физика цвета
+                </p>
+                <p class="podcasts__author">
+                  Татьяна Флеганова
+                </p>
+                <button class="podcasts__btn-listen btn-reset">
+                  <svg class="podcasts__btn-img" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                    <path
+                      d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
+                      fill="#A1A6B4" />
+                  </svg>
+                </button>
+              </div>
+              <div class="podcasts__social-activity flex">
+                <ul class="podcasts__social-list list-reset flex">
+                  <li class="podcasts__social__item podcasts__plays">
+                    58
+                  </li>
+                  <li class="podcasts__social__item podcasts__likes">
+                    29
+                  </li>
+                  <li class="podcasts__social__item podcasts__shared-the-link">
+                    14
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="podcasts__item col-md-12 col-lg-6 podcasts__img8">
+              <p class="podcasts__date">
+                18&nbsp;мая
+              </p>
+              <div class="podcasts__info-text">
+                <p class="podcasts__time">
+                  6:55
+                </p>
+                <p class="podcasts__name">
+                  Правила этикета
+                </p>
+                <p class="podcasts__author">
+                  Татьяна Флеганова
+                </p>
+                <button class="podcasts__btn-listen btn-reset">
+                  <svg class="podcasts__btn-img" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                    <path
+                      d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
+                      fill="#A1A6B4" />
+                  </svg>
+                </button>
+              </div>
+              <div class="podcasts__social-activity flex">
+                <ul class="podcasts__social-list list-reset flex">
+                  <li class="podcasts__social__item podcasts__plays">
+                    24
+                  </li>
+                  <li class="podcasts__social__item podcasts__likes">
+                    54
+                  </li>
+                  <li class="podcasts__social__item podcasts__shared-the-link">
+                    42
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <button class="podcasts__btn-more btn-reset">
+            Ещё подкасты
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer aria-label="contentinfo" class="footer">
+  </footer>
+
+</body>
+
+</html>
