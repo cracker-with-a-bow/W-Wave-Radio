@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
-       clickable: true,
+      clickable: true,
 
     },
 
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function () {
     searchFormInput.classList.add('active-search-input');
   });
 
-  document.addEventListener("click", function(e) {
+  document.addEventListener("click", function (e) {
     let formActive = e.target.closest('.container-search');
     if (!formActive) {
       searchFormInput.value = "";
@@ -85,27 +85,26 @@ document.addEventListener('DOMContentLoaded', function () {
 
   let tabsBtn = document.querySelectorAll('.guests__link-person');
   let tabsItem = document.querySelectorAll('.guests__person');
-  let guestsSomebody =document.querySelector('.guests__somebody');
+  let guestsSomebody = document.querySelector('.guests__somebody');
 
-  tabsBtn.forEach(function(element) {
-    element.addEventListener('click', function(e){
+  tabsBtn.forEach(function (element) {
+    element.addEventListener('click', function (e) {
       const path = e.currentTarget.dataset.path;
 
-     // tabsBtn.forEach(function(btn){ btn.classList.remove('tabs-nav__btn-active')});
+      
+      // tabsBtn.forEach(function(btn){ btn.classList.remove('tabs-nav__btn-active')});
       //e.currentTarget.classList.add('tabs-nav__btn-active');
-      tabsItem.forEach(function(element) {element.classList.remove('guests__person_active')});
+      tabsItem.forEach(function (element) { element.classList.remove('guests__person_active') });
       let guest = document.querySelector(`[data-target="${path}"]`);
-
-      if ( guest !== null) {
-        console.log(guest);
+      if (guest !== null) {
         guest.classList.add('guests__person_active');
 
-        }
-        else {
-          guestsSomebody.classList.add('guests__person_active');
-        }
+      }
+      else {
+        guestsSomebody.classList.add('guests__person_active');
+      }
     });
-    });
+  });
 
 
 })

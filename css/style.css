@@ -1,5 +1,6 @@
 :root {
   --btn-violet-color: #6D31EE;
+  --vilet--AA9DFA: #AA9DFA;
   /*цвет некоторых кнопок(ссылок)*/
   --color-orange-dark: #E1670E;
   /*темно-оранжевый*/
@@ -623,6 +624,10 @@ color: var(--black);
 
 .broadcasts__schedule {
   margin-bottom: 20px;
+
+}
+
+.small-text-gray {
   font-weight: 400;
 font-size: 12px;
 line-height: 12px;
@@ -659,6 +664,7 @@ color: var(--text-gray);
 }
 
 .guests__text {
+  margin-bottom: 50px;
   font-style: normal;
 font-weight: 400;
 font-size: 20px;
@@ -673,11 +679,8 @@ color: var(--text-gray);
 
 .guests__item {
   flex-direction: column;
+  align-items: flex-start;
 }
-
-
-/*how*/
-
 
 .guests__person {
   display: none;
@@ -687,6 +690,87 @@ color: var(--text-gray);
   display: block;
 }
 
+.guests__accordion-item {
+  border: none;
+  background-color: var(--black);
+}
+
+
+.guests__accordion-button {
+  font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 20px;
+color: #FFFFFF;
+border-top: 1px solid var(--vilet--AA9DFA);
+border-bottom: 1px solid var(--vilet--AA9DFA);
+background-color: var(--black);
+}
+
+.guests__accordion-button::after {
+  background-image: url(../img/accordion-img.png);
+  transition: all 0.3s ease-in-out;
+}
+
+.guests__accordion-button:not(.collapsed)::after {
+  background-image: url(../img/accordion-img-active.png);
+  transform: rotate(-360deg);
+  transition: all 0.3s ease-in-out;
+}
+
+.guests__accordion-button:not(.collapsed) {
+  color: red;
+  background-color: var(--black);
+  box-shadow: none;
+}
+
+.guests__list {
+  background-color: var(--black);
+}
+
+
+.guests__link-person {
+  font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 16px;
+color: #FFFFFF;
+}
+
+.guests__social {
+  gap: 30px;
+  margin-bottom: 12px;
+}
+
+.guests__name {
+  margin-bottom: 8px;
+  font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 20px;
+color: #FFFFFF;
+}
+
+.guests__descr {
+  margin-bottom: 30px;
+  font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 180%;
+color: var(--text-gray);
+}
+
+.guests__btn-esters {
+  padding: 17px 43px;
+  font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 16px;
+text-align: center;
+color: var(--vilet--AA9DFA);
+border: 2px solid var(--vilet--AA9DFA);
+border-radius: var(--border-radius__big);
+}
 
 /*faq*/
 

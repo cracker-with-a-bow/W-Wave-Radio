@@ -691,7 +691,7 @@
                 <p class="broadcasts__item-title">
                   О&nbsp;людях и&nbsp;книгах
                 </p>
-                <p class="broadcasts__schedule">
+                <p class="broadcasts__schedule small-text-gray">
                   Анонсируется отдельно
                 </p>
                 <a href="#" class="broadcasts__link-more btn-reset">Подробнее</a>
@@ -700,7 +700,7 @@
                 <p class="broadcasts__item-title">
                   Графомания&nbsp;td
                 </p>
-                <p class="broadcasts__schedule">
+                <p class="broadcasts__schedule small-text-gray">
                   По&nbsp;понедельникам в&nbsp;10:00
                 </p>
                 <a href="#" class="broadcasts__link-more btn-reset">Подробнее</a>
@@ -709,7 +709,7 @@
                 <p class="broadcasts__item-title">
                   Не&nbsp;Рим, не&nbsp;Троя
                 </p>
-                <p class="broadcasts__schedule">
+                <p class="broadcasts__schedule small-text-gray">
                   По вторникам в 12:00
                 </p>
                 <a href="#" class="broadcasts__link-more btn-reset">Подробнее</a>
@@ -718,7 +718,7 @@
                 <p class="broadcasts__item-title">
                   Эрудит
                 </p>
-                <p class="broadcasts__schedule">
+                <p class="broadcasts__schedule small-text-gray">
                   По&nbsp;пятницам в&nbsp;17:00
                 </p>
                 <a href="#" class="broadcasts__link-more btn-reset">Подробнее</a>
@@ -727,7 +727,7 @@
                 <p class="broadcasts__item-title">
                   Тонкости эпох
                 </p>
-                <p class="broadcasts__schedule">
+                <p class="broadcasts__schedule small-text-gray">
                   По&nbsp;субботам в&nbsp;10:00
                 </p>
                 <a href="#" class="broadcasts__link-more btn-reset">Подробнее</a>
@@ -736,7 +736,7 @@
                 <p class="broadcasts__item-title">
                   Живые мысли
                 </p>
-                <p class="broadcasts__schedule">
+                <p class="broadcasts__schedule small-text-gray">
                   По&nbsp;воскресеньям в&nbsp;15:30
                 </p>
                 <a href="#" class="broadcasts__link-more btn-reset">Подробнее</a>
@@ -746,7 +746,7 @@
         </div>
       </div>
     </section>
-    <section class="guests section-offset">
+    <section class="guests section-offset" aria-label="гости">
       <div class="container">
         <div class="row">
           <h2 class="guests__title section__title">
@@ -765,14 +765,14 @@
         <div class="row">
           <div class="guests__accordion col-lg-8">
             <div class="accordion" id="accordionPanelsStayOpenExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+              <div class="accordion-item guests__accordion-item">
+                <p class="accordion-header guests__accordion-header" id="panelsStayOpen-headingOne">
+                  <button class="accordion-button guests__accordion-button" type="button" data-bs-toggle="collapse"
                     data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
                     aria-controls="panelsStayOpen-collapseOne">
                     Блогеры
                   </button>
-                </h2>
+                </p>
                 <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
                   aria-labelledby="panelsStayOpen-headingOne">
                   <div class="accordion-body guests__list flex">
@@ -802,17 +802,17 @@
                   </div>
                 </div>
               </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              <div class="accordion-item guests__accordion-item">
+                <p class="accordion-header guests__accordion-header" id="panelsStayOpen-headingTwo">
+                  <button class="accordion-button collapsed  guests__accordion-button" type="button" data-bs-toggle="collapse"
                     data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
                     aria-controls="panelsStayOpen-collapseTwo">
                     Арт-критики
                   </button>
-                </h2>
+                </p>
                 <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
                   aria-labelledby="panelsStayOpen-headingTwo">
-                  <div class="accordion-body">
+                  <div class="accordion-body guests__list flex">
                     <strong>Это тело аккордеона второго элемента.</strong> По умолчанию он скрыт, пока плагин
                     свертывания не добавит соответствующие классы, которые мы используем для стилизации каждого
                     элемента. Эти классы управляют общим внешним видом, а также отображением и скрытием с помощью
@@ -822,17 +822,77 @@
                   </div>
                 </div>
               </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              <div class="accordion-item guests__accordion-item">
+                <p class="accordion-header guests__accordion-header" id="panelsStayOpen-headingThree">
+                  <button class="accordion-button collapsed guests__accordion-button" type="button" data-bs-toggle="collapse"
                     data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
                     aria-controls="panelsStayOpen-collapseThree">
                     Художники
                   </button>
-                </h2>
+                </p>
                 <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
                   aria-labelledby="panelsStayOpen-headingThree">
-                  <div class="accordion-body">
+                  <div class="accordion-body guests__list flex">
+                    <strong>Это тело аккордеона третьего элемента.</strong> По умолчанию он скрыт, пока плагин
+                    свертывания не добавит соответствующие классы, которые мы используем для стилизации каждого
+                    элемента. Эти классы управляют общим внешним видом, а также отображением и скрытием с помощью
+                    переходов CSS. Вы можете изменить все это с помощью собственного CSS или переопределить наши
+                    переменные по умолчанию. Также стоит отметить, что практически любой HTML может быть помещен в
+                    <code>.accordion-body</code>, хотя переход ограничивает переполнение.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item guests__accordion-item">
+                <p class="accordion-header guests__accordion-header" id="panelsStayOpen-headingFour">
+                  <button class="accordion-button collapsed guests__accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseFour">
+                    Люди науки
+                  </button>
+                </p>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingFour">
+                  <div class="accordion-body guests__list flex">
+                    <strong>Это тело аккордеона третьего элемента.</strong> По умолчанию он скрыт, пока плагин
+                    свертывания не добавит соответствующие классы, которые мы используем для стилизации каждого
+                    элемента. Эти классы управляют общим внешним видом, а также отображением и скрытием с помощью
+                    переходов CSS. Вы можете изменить все это с помощью собственного CSS или переопределить наши
+                    переменные по умолчанию. Также стоит отметить, что практически любой HTML может быть помещен в
+                    <code>.accordion-body</code>, хотя переход ограничивает переполнение.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item guests__accordion-item">
+                <p class="accordion-header guests__accordion-header" id="panelsStayOpen-headingFive">
+                  <button class="accordion-button collapsed guests__accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseFive">
+                    Историки
+                  </button>
+                </p>
+                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingFive">
+                  <div class="accordion-body guests__list flex">
+                    <strong>Это тело аккордеона третьего элемента.</strong> По умолчанию он скрыт, пока плагин
+                    свертывания не добавит соответствующие классы, которые мы используем для стилизации каждого
+                    элемента. Эти классы управляют общим внешним видом, а также отображением и скрытием с помощью
+                    переходов CSS. Вы можете изменить все это с помощью собственного CSS или переопределить наши
+                    переменные по умолчанию. Также стоит отметить, что практически любой HTML может быть помещен в
+                    <code>.accordion-body</code>, хотя переход ограничивает переполнение.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item guests__accordion-item">
+                <p class="accordion-header guests__accordion-header" id="panelsStayOpen-headingSix">
+                  <button class="accordion-button collapsed guests__accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseSix">
+                    Филологи
+                  </button>
+                </p>
+                <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingSix">
+                  <div class="accordion-body guests__list flex">
                     <strong>Это тело аккордеона третьего элемента.</strong> По умолчанию он скрыт, пока плагин
                     свертывания не добавит соответствующие классы, которые мы используем для стилизации каждого
                     элемента. Эти классы управляют общим внешним видом, а также отображением и скрытием с помощью
@@ -899,6 +959,9 @@
                 активную блогерскую деятельность как куратор
                 музея &laquo;Гараж&raquo;, коим является с&nbsp;2016&nbsp;года.
               </p>
+              <a href="#" class="guests__btn-esters btn-reset">
+                Эфиры с гостем
+              </a>
             </div>
             <div class="guests__person" data-target="Sergey-Denisov">
               <img src="./img/olga_martinova.jpg" alt="Ольга Мартынова">
@@ -1577,6 +1640,142 @@
               </p>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+    <section class="playlists section-offset">
+      <div class="container">
+        <div class="row">
+          <article class="playlists__genres col-lg-4">
+          <h2 class="playlists__title section__title">
+            Плейлисты
+          </h2>
+
+          <form>
+            <fieldset>
+              <legend class="broadcasts__text playlists__title-radio-btn">Жанр</legend>
+              <div class="genre__list">
+                <input type="radio" id="genre-Postpunk"
+                 name="genre" value="Postpunk" checked>
+                <label for="genre-Postpunk">Постпанк</label>
+          
+                <input type="radio" id="genre-hardcore"
+                name="genre" value="hardcore">
+                <label for="genre-hardcore">Хардкор</label>
+          
+                <input type="radio" id="genre-Punkrock"
+                name="genre" value="Punkrock">
+                <label for="genre-Punkrock">Панк-рок</label>
+
+                <input type="radio" id="genre-rock"
+                name="genre" value="rock">
+                <label for="genre-rock">Рок</label>
+
+                <input type="radio" id="genre-progressiverock"
+                name="genre" value="progressiverock">
+                <label for="genre-progressiverock">Прогрессивный рок</label>
+
+                <input type="radio" id="genre-Electronicmusic"
+                name="genre" value="Electronicmusic">
+                <label for="genre-Electronicmusic">Электронная музыка</label>
+
+                <input type="radio" id="genre-Classicalmusic"
+                name="genre" value="Classicalmusic">
+                <label for="genre-Classicalmusic">Классическая музыка</label>
+
+                <input type="radio" id="genre-soundsNature"
+                name="genre" value="soundsNature">
+                <label for="genre-soundsNature">Звуки природы и шум города</label>
+              </div>
+              <div>
+              </div>
+            </fieldset>
+          </form>
+          <p class="broadcasts__text playlists__text">
+            Раздел &laquo;Плейлисты&raquo; может содержать 
+            информацию, не&nbsp;предназначенную для 
+            несовершеннолетних
+          </p>
+          <p class="broadcasts__text playlists__text">
+            © 2021 l W-Wave
+          </p>
+        </article>
+        <article class="playlists__songwriters col-lg-8">
+<ul class="playlists__list flex">
+  <li class="playlists__item">
+    <img src="" alt="" class="playlists__country flag-russian">
+    <img class="playlists__img" src="" alt="">
+    <p class="playlists__group__name"></p>
+    <p class="small-text-gray playlists__descr"></p>
+  </li>
+  <li class="playlists__item">
+    <img src="" alt="" class="playlists__country flag-russian">
+    <img class="playlists__img" src="" alt="">
+    <p class="playlists__group__name"></p>
+    <p class="small-text-gray playlists__descr"></p>
+  </li>
+  <li class="playlists__item">
+    <img src="" alt="" class="playlists__country flag-russian">
+    <img class="playlists__img" src="" alt="">
+    <p class="playlists__group__name"></p>
+    <p class="small-text-gray playlists__descr"></p>
+  </li>
+  <li class="playlists__item">
+    <img src="" alt="" class="playlists__country flag-russian">
+    <img class="playlists__img" src="" alt="">
+    <p class="playlists__group__name"></p>
+    <p class="small-text-gray playlists__descr"></p>
+  </li>
+  <li class="playlists__item">
+    <img src="" alt="" class="playlists__country flag-russian">
+    <img class="playlists__img" src="" alt="">
+    <p class="playlists__group__name"></p>
+    <p class="small-text-gray playlists__descr"></p>
+  </li>
+  <li class="playlists__item">
+    <img src="" alt="" class="playlists__country flag-russian">
+    <img class="playlists__img" src="" alt="">
+    <p class="playlists__group__name"></p>
+    <p class="small-text-gray playlists__descr"></p>
+  </li>
+  <li class="playlists__item">
+    <img src="" alt="" class="playlists__country flag-russian">
+    <img class="playlists__img" src="" alt="">
+    <p class="playlists__group__name"></p>
+    <p class="small-text-gray playlists__descr"></p>
+  </li>
+  <li class="playlists__item">
+    <img src="" alt="" class="playlists__country flag-russian">
+    <img class="playlists__img" src="" alt="">
+    <p class="playlists__group__name"></p>
+    <p class="small-text-gray playlists__descr"></p>
+  </li>
+  <li class="playlists__item">
+    <img src="" alt="" class="playlists__country flag-russian">
+    <img class="playlists__img" src="" alt="">
+    <p class="playlists__group__name"></p>
+    <p class="small-text-gray playlists__descr"></p>
+  </li>
+  <li class="playlists__item">
+    <img src="" alt="" class="playlists__country flag-russian">
+    <img class="playlists__img" src="" alt="">
+    <p class="playlists__group__name"></p>
+    <p class="small-text-gray playlists__descr"></p>
+  </li>
+  <li class="playlists__item">
+    <img src="" alt="" class="playlists__country flag-russian">
+    <img class="playlists__img" src="" alt="">
+    <p class="playlists__group__name"></p>
+    <p class="small-text-gray playlists__descr"></p>
+  </li>
+  <li class="playlists__item">
+    <img src="" alt="" class="playlists__country flag-russian">
+    <img class="playlists__img" src="" alt="">
+    <p class="playlists__group__name"></p>
+    <p class="small-text-gray playlists__descr"></p>
+  </li>
+</ul>
+        </article>
         </div>
       </div>
     </section>
