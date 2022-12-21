@@ -81,10 +81,11 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
 
-  //tabs
+  //tabs-guests
 
   let tabsBtn = document.querySelectorAll('.guests__link-person');
   let tabsItem = document.querySelectorAll('.guests__person');
+  let guestsSomebody =document.querySelector('.guests__somebody');
 
   tabsBtn.forEach(function(element) {
     element.addEventListener('click', function(e){
@@ -93,7 +94,16 @@ document.addEventListener('DOMContentLoaded', function () {
      // tabsBtn.forEach(function(btn){ btn.classList.remove('tabs-nav__btn-active')});
       //e.currentTarget.classList.add('tabs-nav__btn-active');
       tabsItem.forEach(function(element) {element.classList.remove('guests__person_active')});
-      document.querySelector(`[data-target="${path}"]`).classList.add('guests__person_active');
+      let guest = document.querySelector(`[data-target="${path}"]`);
+
+      if ( guest !== null) {
+        console.log(guest);
+        guest.classList.add('guests__person_active');
+
+        }
+        else {
+          guestsSomebody.classList.add('guests__person_active');
+        }
     });
     });
 
