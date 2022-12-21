@@ -83,24 +83,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
   //tabs
 
-  let tabsBtn = document.querySelectorAll('.tabs-nav__btn');
-  let tabsItem = document.querySelectorAll('.tabs-item');
+  let tabsBtn = document.querySelectorAll('.guests__link-person');
+  let tabsItem = document.querySelectorAll('.guests__person');
 
   tabsBtn.forEach(function(element) {
     element.addEventListener('click', function(e){
       const path = e.currentTarget.dataset.path;
 
-      tabsBtn.forEach(function(btn){ btn.classList.remove('tabs-nav__btn-active')});
-      e.currentTarget.classList.add('tabs-nav__btn-active');
-      tabsItem.forEach(function(element) {element.classList.remove('tabs-item-active')});
-      document.querySelector(`[data-target="${path}"]`).classList.add('tabs-item-active');
+     // tabsBtn.forEach(function(btn){ btn.classList.remove('tabs-nav__btn-active')});
+      //e.currentTarget.classList.add('tabs-nav__btn-active');
+      tabsItem.forEach(function(element) {element.classList.remove('guests__person_active')});
+      document.querySelector(`[data-target="${path}"]`).classList.add('guests__person_active');
     });
     });
 
-
-    //accordion
-
-    new Accordion('.accordion-container');
 
 })
 
