@@ -9,6 +9,7 @@
   --light-gray: #E6E8EC;
   --black: #121723;
   --text-gray: #A1A6B4;
+  --yellow-F0D288: #F0D288;
 }
 
 
@@ -85,9 +86,9 @@ body {
 
 .section__title {
   font-style: normal;
-font-weight: 400;
-font-size: 48px;
-line-height: 100%;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 100%;
 }
 
 .card-title {
@@ -305,7 +306,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .header__part2 {
-border: 1px solid var(--light-gray);
+  border: 1px solid var(--light-gray);
 }
 
 .submenu {
@@ -354,27 +355,27 @@ border: 1px solid var(--light-gray);
 .hero__title {
   margin-bottom: 14px;
   font-weight: 700;
-font-size: 60px;
-line-height: 100%;
-color: var(--black);
+  font-size: 60px;
+  line-height: 100%;
+  color: var(--black);
 }
 
 .hero__descr {
   margin-bottom: 45px;
   font-weight: 400;
-font-size: 16px;
-line-height: 150%;
+  font-size: 16px;
+  line-height: 150%;
 }
 
 .hero__btn {
   padding: 25px 54px;
   font-weight: 500;
-font-size: 20px;
-line-height: 20px;
-text-align: center;
-color: #FFFFFF;
-background-color: var(--btn-violet-color);
-border-radius: var(--border-radius__smaller);
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: var(--btn-violet-color);
+  border-radius: var(--border-radius__smaller);
 }
 
 @media (min-width: 1200px) {
@@ -416,12 +417,12 @@ border-radius: var(--border-radius__smaller);
 }
 
 .podcasts__date {
-position: absolute;
-bottom:-1px;
-left: 0;
-width: 65px;
-height: 25px;
-background: #E6E8EC;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 65px;
+  height: 25px;
+  background: #E6E8EC;
 }
 
 .podcasts__info-text {
@@ -438,23 +439,23 @@ background: #E6E8EC;
 .podcasts__time {
   margin-bottom: 8px;
   font-weight: 400;
-font-size: 12px;
-line-height: 12px;
-color: var(--black);
+  font-size: 12px;
+  line-height: 12px;
+  color: var(--black);
 }
 
 .podcasts__name {
   font-weight: 400;
-font-size: 20px;
-line-height: 20px;
-color: var(--black);
+  font-size: 20px;
+  line-height: 20px;
+  color: var(--black);
 }
 
 .podcasts__author {
   font-weight: 400;
-font-size: 16px;
-line-height: 16px;
-color: var(--text-gray);
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--text-gray);
 }
 
 .podcasts__social-activity {
@@ -468,25 +469,25 @@ color: var(--text-gray);
 }
 
 .podcasts__btn-more {
-  width:fit-content;
+  width: fit-content;
   padding: 25px 54px;
   font-weight: 500;
-font-size: 20px;
-line-height: 20px;
-text-align: center;
-color: var(--btn-violet-color);
-border: 2px solid var(--btn-violet-color);
-border-radius: var(--border-radius__smaller);
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: var(--btn-violet-color);
+  border: 2px solid var(--btn-violet-color);
+  border-radius: var(--border-radius__smaller);
 }
 
 .podcasts__social__item {
   padding-left: 10px;
   font-weight: 400;
-font-size: 16px;
-line-height: 16px;
-color: var(--text-gray);
-background-position: left center;
-background-repeat: no-repeat;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--text-gray);
+  background-position: left center;
+  background-repeat: no-repeat;
 }
 
 .podcasts__container {
@@ -560,10 +561,10 @@ background-repeat: no-repeat;
 
 .broadcasts__text {
   font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 16px;
-color: var(--text-gray);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--text-gray);
 }
 
 .broadcasts__archive {
@@ -575,12 +576,12 @@ color: var(--text-gray);
 .broadcasts__link-archive {
   padding: 17px 43px;
   font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 16px;
-color: var(--black);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--black);
   border: 2px solid var(--black);
-border-radius: var(--border-radius__big);
+  border-radius: var(--border-radius__big);
 }
 
 .broadcasts__list {
@@ -592,34 +593,39 @@ border-radius: var(--border-radius__big);
 .broadcasts__item {
   padding: 168px 6px 20px 20px;
   background: #FFFFFF;
-border: 1px solid #E6E8EC;
+  border: 1px solid #E6E8EC;
   background-repeat: no-repeat;
 }
 
 .broadcasts__img1 {
   background-image: url(../img/broadcasts__img1.jpg);
 }
+
 .broadcasts__img2 {
   background-image: url(../img/broadcasts__img2.jpg);
 }
+
 .broadcasts__img3 {
   background-image: url(../img/broadcasts__img3.jpg);
 }
+
 .broadcasts__img4 {
   background-image: url(../img/broadcasts__img4.jpg);
 }
+
 .broadcasts__img5 {
   background-image: url(../img/broadcasts__img5.jpg);
 }
+
 .broadcasts__img6 {
   background-image: url(../img/broadcasts__img6.jpg);
 }
 
 .broadcasts__item-title {
   font-weight: 500;
-font-size: 20px;
-line-height: 20px;
-color: var(--black);
+  font-size: 20px;
+  line-height: 20px;
+  color: var(--black);
 }
 
 .broadcasts__schedule {
@@ -629,9 +635,9 @@ color: var(--black);
 
 .small-text-gray {
   font-weight: 400;
-font-size: 12px;
-line-height: 12px;
-color: var(--text-gray);
+  font-size: 12px;
+  line-height: 12px;
+  color: var(--text-gray);
 }
 
 .broadcasts__link-more {
@@ -657,19 +663,19 @@ color: var(--text-gray);
 
 .guests__text_bold {
   font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 150%;
-color: var(--text-gray);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: var(--text-gray);
 }
 
 .guests__text {
   margin-bottom: 50px;
   font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 160%;
-color: var(--text-gray);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  color: var(--text-gray);
 }
 
 .guests__list {
@@ -698,13 +704,13 @@ color: var(--text-gray);
 
 .guests__accordion-button {
   font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 20px;
-color: #FFFFFF;
-border-top: 1px solid var(--vilet--AA9DFA);
-border-bottom: 1px solid var(--vilet--AA9DFA);
-background-color: var(--black);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #FFFFFF;
+  border-top: 1px solid var(--vilet--AA9DFA);
+  border-bottom: 1px solid var(--vilet--AA9DFA);
+  background-color: var(--black);
 }
 
 .guests__accordion-button::after {
@@ -731,10 +737,10 @@ background-color: var(--black);
 
 .guests__link-person {
   font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 16px;
-color: #FFFFFF;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #FFFFFF;
 }
 
 .guests__social {
@@ -745,31 +751,239 @@ color: #FFFFFF;
 .guests__name {
   margin-bottom: 8px;
   font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 20px;
-color: #FFFFFF;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #FFFFFF;
 }
 
 .guests__descr {
   margin-bottom: 30px;
   font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 180%;
-color: var(--text-gray);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 180%;
+  color: var(--text-gray);
 }
 
 .guests__btn-esters {
   padding: 17px 43px;
   font-style: normal;
-font-weight: 500;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  color: var(--vilet--AA9DFA);
+  border: 2px solid var(--vilet--AA9DFA);
+  border-radius: var(--border-radius__big);
+}
+
+/*playlists*/
+
+.playlists__genres {
+  margin-bottom: 12px;
+}
+
+.playlists__title-radio-btn {
+  margin-bottom: 8px;
+}
+
+.genre__list-form {
+  margin-bottom: 38px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #D2D5DD;
+  ;
+}
+
+.playlists__text-img {
+  padding-bottom: 36px;
+  background-image: url(../img/18+.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+.genre__list {
+  flex-direction: column;
+  gap: 16px;
+}
+
+.playlists__songwriters {
+  padding-top: 20px;
+}
+
+.playlists__list {
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.playlists__item {
+  position: relative;
+  min-width: 160px;
+  padding-bottom: 16px;
+  border: 1px solid #E6E8EC;
+}
+
+.playlists__country {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.playlists__img {
+  margin-bottom: 16px;
+}
+
+.playlists__group__name {
+  margin-bottom: 4px;
+  padding-left: 16px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--black);
+}
+
+.playlists__descr {
+  padding-left: 16px;
+}
+
+/* products */
+
+.products {
+  background: #292E39;
+}
+
+.products__img {
+  position: relative;
+}
+
+.product__new {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.products__titleh2_hidden {
+  color: transparent;
+  font-size: 0;
+}
+
+.products__title {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  color: var(--yellow-F0D288);
+  background-image: url(../img/line.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+.product__descr-container {
+  margin-bottom: 30px;
+}
+
+.product__descr {
+  margin-bottom: 12px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 180%;
+  color: #FFFFFF;
+}
+
+.product__descr:last-child {
+  margin-bottom: 0;
+}
+
+.product__price {
+  margin-bottom: 30px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+
+.product__btn {
+  display: inline-block;
+  padding: 25px 13.5px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  color: var(--yellow-F0D288);
+  border: 2px solid var(--yellow-F0D288);
+  border-radius: 100px;
+}
+
+/*about */
+
+.about {
+  background: var(--black);
+}
+
+.about__img-line {
+  background-image: url(../img/Spiral.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.about__img-star {
+  background-image: url(../img/Dawn.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: center;
+}
+
+.about__title {
+  margin-bottom: 12px;
+}
+
+.about__subtitle {
+  margin-bottom: 8px;
+  font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 150%;
+color: var(--text-gray);
+}
+
+.about__appeal {
+  font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 160%;
+color: var(--text-gray);
+}
+
+.about__author-text {
+  font-style: normal;
+font-weight: 400;
 font-size: 16px;
-line-height: 16px;
-text-align: center;
-color: var(--vilet--AA9DFA);
-border: 2px solid var(--vilet--AA9DFA);
-border-radius: var(--border-radius__big);
+line-height: 24px;
+color: var(--text-gray);
+}
+
+.slider {
+  position: relative;
+}
+
+.button-prev {
+  position: absolute;
+  top:35%;
+  left: -6%;
+  width: 45px;
+  height: 45px;
+  z-index: 100;
+}
+
+
+.button-next {
+  position: absolute;
+  top:35%;
+  right: -6%;
+  width: 45px;
+  height: 45px;
+  z-index: 100;
 }
 
 /*faq*/
