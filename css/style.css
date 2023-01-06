@@ -986,354 +986,132 @@ color: var(--text-gray);
   z-index: 100;
 }
 
-/*faq*/
 
-.faq {
-  overflow: hidden;
-}
+/* form */
 
-
-.faq__title {
-  margin-bottom: 42px;
-}
-
-.ac {
-  margin-top: 0;
-  border: none;
-  background-color: #FFFFFF;
-}
-
-.ac .list-questions__question {
+.about__form {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 30px;
   position: relative;
-  margin: 0;
-  margin-bottom: -1px;
-  padding: 30px 0 30px 0;
-  font-family: 'Montserrat', sans-serif !important;
+  background: var(--black);
+}
+
+
+.form-group {
+  display: flex;
+  position: relative;
+  padding-top: 15px;
+}
+
+textarea.form-control {
+  min-height: 150px;
+}
+
+.form__textarea {
+  width:100%;
+  padding: 30px 10px 10px 32px;
   font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 32px;
-  color: #333333;
-  border-bottom: 1px solid #CACACA;
-  border-top: 1px solid #CACACA;
-  transition: all 1s;
+font-weight: 400;
+font-size: 20px;
+line-height: 20px;
+  color: var(--text-gray);
+  background: var(--black);
+  border: 1px solid #FFFFFF;
+border-radius: 30px;
 }
 
-.list-questions__question svg ellipse {
-  transition: all 1s;
+.about__inputs {
+  justify-content: space-between;
+  gap: 30px;
 }
 
-.list-questions__question svg path {
-  transition: all 1s;
+.about__input {
+  width: 50%;
 }
 
-@media (min-width: 1200px) {
-  .list-questions__question:hover:not(:focus-visible) {
-    color: var(--btn-color);
-    border-top: 1px solid var(--btn-color);
-    border-bottom: 1px solid var(--btn-color);
-    z-index: 1;
-  }
-
-  .list-questions__question:hover:not(:focus-visible) svg ellipse {
-    fill: var(--btn-color);
-  }
-
-  .list-questions__question:hover:not(:focus-visible) svg path {
-    fill: #FFFFFF;
-  }
-
+.form__input {
+  padding: 25px 32px;
+  font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 20px;
+  color: var(--text-gray);
+  background: var(--black);
+  border: 1px solid #FFFFFF;
+border-radius: 30px;
 }
 
-.ac .list-questions__question:focus-visible {
-  outline: none;
-  color: var(--btn-color);
-  border-top: 1px solid var(--btn-color);
-  border-bottom: 1px solid var(--btn-color);
-  z-index: 1;
+.js-validate-error-label {
+  order: -1;
+  position: absolute;
+  transform: translateY(-120%);
 }
 
-.list-questions__question:focus-visible svg ellipse {
-  fill: var(--btn-color);
+.form-group input::placeholder {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #999999;
 }
 
-.list-questions__question:focus-visible svg path {
-  fill: #FFFFFF;
+.form-group__btn {
+  align-self: flex-start;
+  display: inline-block;
+  padding: 17px 53px;
+  font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 20px;
+text-align: center;
+color: #FFFFFF;
+  border: 0;
+  background: var(--btn-violet-color);
+  border-radius: var(--border-radius__smaller);
+  cursor: pointer;
 }
-
-.list-questions__question:active:not(:focus-visible) {
-  color: #333333;
-  border-bottom: 1px solid #CACACA;
-  border-top: 1px solid #CACACA;
-}
-
-.ac-panel .list-questions__answer {
-  max-width: 1003px;
-  font-family: 'Montserrat', sans-serif !important;
-  font-style: normal !important;
-  font-weight: 400 !important;
-  font-size: 16px !important;
-  line-height: 32px !important;
-  /* or 200% */
-  color: #000000 !important;
-}
-
-
-.ac .ac-trigger::after {
-  display: none;
-}
-
-.ac-header .accordion__btn-img {
-  min-width: min-content;
-  transition: all 1s;
-}
-
-.ac.is-active>.ac-header .accordion__btn-img {
-  transform: rotate(45deg);
-
-}
-
-
 
 /*footer*/
 
 .footer {
-  padding: 50px 75px 50px 75px;
-  background: #222222;
-  overflow: hidden;
+  background-color: #292E39;
 }
 
-.footer-conteiner {
+.footer__part1 {
+  background-image: url(../img/footer-line.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.footer__container {
   justify-content: space-between;
 }
 
-.footer__part_left {
+.footer__menu-list {
   flex-direction: column;
-  max-width: 580px;
+  flex-wrap: wrap;
+  justify-content: stretch;
+  max-height: 88px;
 }
 
-.footer__part_center {
-  flex-direction: column;
-  max-width: 580px;
-}
+.footer__menu-link {
 
-.form-application__title {
-  margin-bottom: 25px;
   font-style: normal;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 59px;
-  color: #CACACA;
+font-weight: 400;
+font-size: 16px;
+line-height: 16px;
+color: #FFFFFF;
 }
 
-.form-application input,
-textarea {
-  border-radius: 16px;
-}
-
-.form-application {
-  flex-direction: column;
-  width: 570px;
-}
-
-.list-btn-in-form-application {
-  padding: 0;
-  border: none;
-}
-
-.form-application__input-name {
-  margin-bottom: 25px;
-  height: 60px;
-  padding: 14px 2px 14px 24px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 32px;
-  border: none;
-  color: #CACACA;
-  background: #414141;
-  transition: all 1s;
-}
-
-.form-application__input-email {
-  margin-bottom: 25px;
-  height: 60px;
-  padding: 14px 2px 14px 24px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 32px;
-  border: none;
-  color: #CACACA;
-  background: #414141;
-  transition: all 1s;
-}
-
-.form-application__input-message {
-  margin-bottom: 32px;
-  height: 150px;
-  padding: 14px 2px 14px 24px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 32px;
-  border: none;
-  color: #CACACA;
-  background: #414141;
-  transition: all 1s;
-}
-
-.form-application__btn-send {
-  margin-right: 22px;
-  padding: 19px 52px 19px 52px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
+.footer__copyright {
+  padding: 10px;
   text-align: center;
-  border: none;
-  color: #FFFFFF;
-  background-color: var(--btn-color);
-  transition: all 1s;
-}
-
-.label-for-input-agree {
   font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 32px;
-  color: #CACACA;
-}
-
-@media (min-width: 1200px) {
-  .form-application__input-name:hover:not(:focus-visible) {
-    background-color: #666666;
-    outline: none;
-  }
-}
-
-.form-application__input-name:focus-visible {
-  background-color: #666666;
-  outline: none;
-}
-
-.form-application__input-name:active {
-  background-color: #666666;
-  color: #FFFFFF;
-  outline: none;
-}
-
-@media (min-width: 1200px) {
-  .form-application__input-email:hover:not(:focus-visible) {
-    background-color: #666666;
-    outline: none;
-  }
-}
-
-.form-application__input-email:focus-visible {
-  background-color: #666666;
-  outline: none;
-}
-
-.form-application__input-email:active {
-  background-color: #666666;
-  color: #FFFFFF;
-  outline: none;
-}
-
-@media (min-width: 1200px) {
-  .form-application__input-message:hover:not(:focus-visible) {
-    background-color: #666666;
-    outline: none;
-  }
-}
-
-.form-application__input-message:focus-visible {
-  background-color: #666666;
-  outline: none;
-}
-
-.form-application__input-message:active {
-  background-color: #666666;
-  color: #FFFFFF;
-  outline: none;
-}
-
-.footer__part_right {
-  flex-direction: column;
-  justify-content: center;
-  max-width: 580px;
-}
-
-.footer__logo {
-  margin-bottom: 15px;
-}
-
-.footer-menu {
-  margin-bottom: 90px;
-}
-
-.footer-menu__item {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 36px;
-  color: #CACACA;
-}
-
-.item-link-footer {
-  transition: all 1s;
-}
-
-@media (min-width: 1200px) {
-  .item-link-footer:hover:not(:focus-visible) {
-    color: var(--btn-color);
-  }
-}
-
-.item-link-footer:focus-visible {
-  outline: 1px solid var(--btn-color);
-}
-
-.footer-menu__item:active {
-  color: var(--color-orange-dark);
-  outline: none;
-}
-
-.footer-icon {
-  display: inline-block;
-}
-
-.footer-icon:not(:last-child) {
-  margin-right: 25px;
-}
-
-.footer__text-part-right {
-  max-width: 363px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 32px;
-  color: #CACACA;
-}
-
-.footer-icon:focus-visible {
-  outline: 1px solid var(--btn-color);
-}
-
-@media (min-width: 1200px) {
-  .footer-icon:hover:not(:focus-visible) path {
-    fill: var(--btn-color);
-  }
-}
-
-.footer-icon:active path {
-  fill: var(--color-orange-dark);
-}
-
-.footer-icon:active {
-  outline: none;
+font-weight: 400;
+font-size: 16px;
+line-height: 103.34%;
+color: var(--text-gray);
 }

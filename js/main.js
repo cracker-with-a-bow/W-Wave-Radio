@@ -128,5 +128,47 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
 
+
+  /*form*/
+  function validateForm() {
+ // let phone = document.querySelector('.input__tel')
+  //  let im = new Inputmask("+375 (99) 999-99-99")
+  //  im.mask(phone);
+    new window.JustValidate('.about__form', {
+      colorWrong: '#D52B1E',
+      rules: {
+        name: {
+          required: true
+        },
+        email: {
+          required: true,
+          email: true
+        },
+        message: {
+          required: true
+        }
+        /*phone: {
+          required: true,
+          function: (name, value) => {
+            const ph = phone.inputmask.unmaskedvalue();
+            return Number(ph) && ph.length === 10;
+          }
+        },*/
+      },
+      messages: {
+        email: {
+          required: "Вы не ввели e-mail"
+        },
+        name: "Вы не ввели имя",
+        message: "Вы не ввели сообщение",
+       /* phone: {
+          required: "Вы не ввели телефон",
+          function: "Недостаточное количество символов"
+        }*/
+      }
+    });
+  }
+  validateForm();
+
 })
 
