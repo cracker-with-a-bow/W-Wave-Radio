@@ -1,3 +1,52 @@
+@font-face {
+  font-family: 'Muller';
+  src: local('Muller-Regular'),
+    url('../fonts/MullerRegular.woff2') format('woff2'),
+    url('../fonts/MullerRegular.woff') format('woff');
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: local('MullerRegularItalic'),
+    url('../fonts/MullerRegularItalic.woff2') format('woff2'),
+    url('../fonts/MullerRegularItalic.woff') format('woff');
+  font-display: swap;
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: local('Muller-Medium'),
+    url('../fonts/MullerMedium.woff2') format('woff2'),
+    url('../fonts/MullerMedium.woff') format('woff');
+  font-display: swap;
+  font-weight: 500;
+}
+
+
+@font-face {
+  font-family: 'Muller';
+  src: local('Muller-Bold'),
+    url('../fonts/MullerBold.woff2') format('woff2'),
+    url('../fonts/MullerBold.woff') format('woff');
+  font-display: swap;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: local('MullerLightItalic'),
+    url('../fonts/MullerLightItalic.woff2') format('woff2'),
+    url('../fonts/MullerLightItalic.woff') format('woff');
+  font-display: swap;
+  font-weight: 300;
+  font-style: italic;
+}
+
+
 :root {
   --btn-violet-color: #6D31EE;
   --vilet--AA9DFA: #AA9DFA;
@@ -46,7 +95,7 @@ p {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Muller', sans-serif;
   min-width: 320px;
   background: #FFFFFF;
 }
@@ -73,6 +122,7 @@ body {
 .flex {
   display: flex;
 }
+
 
 /*.container {
   max-width: 1110px;
@@ -130,7 +180,7 @@ body {
 .menu__link {
   position: relative;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 18px;
   line-height: 22px;
   color: #333333;
@@ -342,6 +392,93 @@ input[type="search"]::-webkit-search-cancel-button {
 
 /*hero*/
 
+.modal-window {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  max-width: 824px;
+  max-height: 655px;
+  margin: auto auto;
+  padding: 60px;
+  background: var(--black);
+  z-index: 1000;
+}
+
+.modal-window__title {
+  margin-bottom: 17px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 100%;
+  color: #FFFFFF;
+}
+
+.modal-window__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.modal-window__text_violet {
+  color: var(--btn-violet-color);
+}
+
+.modal-window__text-margin {
+  margin-bottom: 30px;
+}
+
+.modal-window__form {
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.modal-window__input {
+  min-width: 526px;
+  padding: 15px 10px 15px 32px;
+  font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 20px;
+color: var(--text-gray);
+  border: 1px solid #FFFFFF;
+  background-color: var(--black);
+border-radius: var(--border-radius__smaller);
+}
+
+.modal-window__btn {
+  padding: 25px 54px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: var(--btn-violet-color);
+  border-radius: var(--border-radius__smaller);
+}
+
+.modal-window__line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--light-gray);
+}
+
+.modal-window__social-list {
+  gap: 40px;
+}
+
+.modal-window__btn-close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
 .hero {
   padding-top: 38px;
   padding-bottom: 40px;
@@ -354,10 +491,15 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .hero__title {
   margin-bottom: 14px;
+  font-style: normal;
   font-weight: 700;
   font-size: 60px;
   line-height: 100%;
   color: var(--black);
+}
+
+.hero__title_italic {
+  font-style: italic;
 }
 
 .hero__descr {
@@ -543,6 +685,10 @@ input[type="search"]::-webkit-search-cancel-button {
   background-image: url(../img/podcasts__img8.jpg);
 }
 
+.podcasts__novisible {
+  display: none;
+}
+
 /*broadcasts*/
 
 .broadcasts__title {
@@ -553,10 +699,42 @@ input[type="search"]::-webkit-search-cancel-button {
 .broadcasts__author {
   flex-direction: column;
   justify-content: space-between;
+  min-height: 500px;
 }
 
 .broadcasts__title-select {
   margin-bottom: 8px;
+}
+
+.choices__inner {
+  min-width: 255px;
+  padding: 12px 15px 12px 12px;
+  font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 16px;
+color: var(--black);
+  background: var(--light-gray);
+  border: none;
+border-radius: 10px;
+}
+
+.broadcasts__option {
+  font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 16px;
+}
+
+.choices__placeholder {
+  opacity: 1;
+}
+
+.choices[data-type*=select-one]:after {
+  content: url(../img/broadcasts-line.png);
+  border-style: none;
+  top: 30%;
+  right: 21px;
 }
 
 .broadcasts__text {
@@ -591,6 +769,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .broadcasts__item {
+  display: none;
   padding: 168px 6px 20px 20px;
   background: #FFFFFF;
   border: 1px solid #E6E8EC;
@@ -649,6 +828,10 @@ input[type="search"]::-webkit-search-cancel-button {
   background-image: url(../img/more-btn.png);
   background-repeat: no-repeat;
   background-position: right center;
+}
+
+.broadcasts__item_active {
+  display: block;
 }
 
 /* guests */
@@ -792,11 +975,15 @@ input[type="search"]::-webkit-search-cancel-button {
   margin-bottom: 38px;
   padding-bottom: 22px;
   border-bottom: 1px solid #D2D5DD;
-  ;
 }
+
 
 .playlists__text-img {
   padding-bottom: 36px;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
   background-image: url(../img/18+.png);
   background-repeat: no-repeat;
   background-position: left bottom;
@@ -941,26 +1128,26 @@ input[type="search"]::-webkit-search-cancel-button {
 .about__subtitle {
   margin-bottom: 8px;
   font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 150%;
-color: var(--text-gray);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: var(--text-gray);
 }
 
 .about__appeal {
   font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 160%;
-color: var(--text-gray);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  color: var(--text-gray);
 }
 
 .about__author-text {
   font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-color: var(--text-gray);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-gray);
 }
 
 .slider {
@@ -969,7 +1156,7 @@ color: var(--text-gray);
 
 .button-prev {
   position: absolute;
-  top:35%;
+  top: 35%;
   left: -6%;
   width: 45px;
   height: 45px;
@@ -979,7 +1166,7 @@ color: var(--text-gray);
 
 .button-next {
   position: absolute;
-  top:35%;
+  top: 35%;
   right: -6%;
   width: 45px;
   height: 45px;
@@ -1010,16 +1197,16 @@ textarea.form-control {
 }
 
 .form__textarea {
-  width:100%;
+  width: 100%;
   padding: 30px 10px 10px 32px;
   font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 20px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
   color: var(--text-gray);
   background: var(--black);
   border: 1px solid #FFFFFF;
-border-radius: 30px;
+  border-radius: 30px;
 }
 
 .about__inputs {
@@ -1034,13 +1221,13 @@ border-radius: 30px;
 .form__input {
   padding: 25px 32px;
   font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 20px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
   color: var(--text-gray);
   background: var(--black);
   border: 1px solid #FFFFFF;
-border-radius: 30px;
+  border-radius: 30px;
 }
 
 .js-validate-error-label {
@@ -1063,11 +1250,11 @@ border-radius: 30px;
   display: inline-block;
   padding: 17px 53px;
   font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 20px;
-text-align: center;
-color: #FFFFFF;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
   border: 0;
   background: var(--btn-violet-color);
   border-radius: var(--border-radius__smaller);
@@ -1100,18 +1287,28 @@ color: #FFFFFF;
 .footer__menu-link {
 
   font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 16px;
-color: #FFFFFF;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #FFFFFF;
 }
 
 .footer__copyright {
   padding: 10px;
   text-align: center;
   font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 103.34%;
-color: var(--text-gray);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 103.34%;
+  color: var(--text-gray);
 }
+
+
+
+.display-block {
+  display: block;
+}
+
+.stop-scroll {
+  overflow: hidden;
+} 

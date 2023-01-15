@@ -111,10 +111,6 @@ document.addEventListener('DOMContentLoaded', function () {
   tabsBtn.forEach(function (element) {
     element.addEventListener('click', function (e) {
       const path = e.currentTarget.dataset.path;
-
-      
-      // tabsBtn.forEach(function(btn){ btn.classList.remove('tabs-nav__btn-active')});
-      //e.currentTarget.classList.add('tabs-nav__btn-active');
       tabsItem.forEach(function (element) { element.classList.remove('guests__person_active') });
       let guest = document.querySelector(`[data-target="${path}"]`);
       if (guest !== null) {
@@ -170,5 +166,76 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   validateForm();
 
+  /*modal-window*/
+
+  headerBtn = document.querySelector('.header__btn');
+  modalWindow = document.querySelector('.modal-window');
+  modalWindowBtnClose = document.querySelector('.modal-window__btn-close');
+  headerBtn.addEventListener('click' , function() {
+    document.body.classList.add('stop-scroll');
+    modalWindow.classList.add('display-block');
+  });
+  modalWindowBtnClose.addEventListener('click' , function() {
+    modalWindow.classList.remove('display-block');
+    document.body.classList.remove('stop-scroll');
+  });
+
+  /*podcasts more */
+
+  let podcastsBtnMore = document.querySelector('.podcasts__btn-more');
+  let morePodcasts = 'Ещё подкасты';
+  let fewerPodcasts = 'меньше подкастов';
+  podcastsBtnMore.textContent = morePodcasts;
+  let podcastsNoVisible = document.querySelectorAll('.podcasts__novisible');
+  podcastsBtnMore.addEventListener('click' , function() {
+    podcastsNoVisible.forEach(element => element.classList.toggle('podcasts__novisible'));
+    if (podcastsBtnMore.textContent == morePodcasts) {
+    podcastsBtnMore.textContent = fewerPodcasts;
+    } else if(podcastsBtnMore.textContent == fewerPodcasts) {
+      podcastsBtnMore.textContent = morePodcasts;
+    };
+  })
+
+  /*choices select*/
+
+  let broadcastsItems = document.querySelectorAll('.broadcasts__item');
+  const broadcastsSelect = document.querySelector('.broadcasts__select');
+  const choices = new Choices(broadcastsSelect, {
+    placeholder: false,
+    itemSelectText: '',
+    searchEnabled: false,
+  });
+  broadcastsSelect.addEventListener(
+    'addItem',
+    function(event) {
+      console.log(event.detail.value);
+      console.log(broadcastsItems);
+      broadcastsItems.forEach(function (elem) { 
+        elem.classList.remove('broadcasts__item_active') 
+        let broadcastsItem = document.querySelector(`[data-target="${event.detail.value}"]`);
+        if (broadcastsItem !== null) {
+          broadcastsItem.classList.add('broadcasts__item_active');
+  
+        }
+        else {
+          broadcastsItemSomebody.classList.add('broadcasts__item_active');
+        }
+      });
+
+    },
+    
+  );
+  
+  /*
+      tabsItem.forEach(function (element) { element.classList.remove('broadcasts__item_active') });
+      let guest = document.querySelector(`[data-target="${path}"]`);
+      if (guest !== null) {
+        guest.classList.add('guests__person_active');
+
+      }
+      else {
+        guestsSomebody.classList.add('guests__person_active');
+      }*/
+    
 })
 
