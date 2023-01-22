@@ -1,47 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-  const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-    spaceBetween: 30,
-    loopedSlides: 4,
-    autoplay: {
-      delay: 5000,
-    },
-
-    navigation: {
-      nextEl: '.button-next',
-      prevEl: '.button-prev',
-    },
-
-    centeredSlides: true,
-    slidesPerView: 4,
-    slidesPerGroup: 1,
-    /*breakpoints: {
-        // when window width is <= 320px
-        320: {
-          slidesPerView: 1,
-          spaceBetween: 10
-        },
-        // when window width is <= 480px
-        480: {
-          slidesPerView: 2,
-          spaceBetween: 20
-        },
-        // when window width is <= 640px
-        640: {
-          slidesPerView: 3,
-          spaceBetween: 30
-        }
-      }*/
-
-
-
-
-
-
-  });
 
   //burger
   let menuBtn = document.querySelector('.menu-btn');
@@ -125,46 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-  /*form*/
-  function validateForm() {
-    // let phone = document.querySelector('.input__tel')
-    //  let im = new Inputmask("+375 (99) 999-99-99")
-    //  im.mask(phone);
-    new window.JustValidate('.about__form', {
-      colorWrong: '#D52B1E',
-      rules: {
-        name: {
-          required: true
-        },
-        email: {
-          required: true,
-          email: true
-        },
-        message: {
-          required: true
-        }
-        /*phone: {
-          required: true,
-          function: (name, value) => {
-            const ph = phone.inputmask.unmaskedvalue();
-            return Number(ph) && ph.length === 10;
-          }
-        },*/
-      },
-      messages: {
-        email: {
-          required: "Вы не ввели e-mail"
-        },
-        name: "Вы не ввели имя",
-        message: "Вы не ввели сообщение",
-        /* phone: {
-           required: "Вы не ввели телефон",
-           function: "Недостаточное количество символов"
-         }*/
-      }
-    });
-  }
-  validateForm();
+
 
   /*modal-window*/
 
@@ -252,8 +171,98 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
+  let submenuBtns = document.querySelectorAll('.submenu__btn');
+  let submenuBtnPause = document.querySelector('.submenu__btn-pause');
+  submenuBtns.forEach(function (element) {
+    element.addEventListener('click', function (e) {
+      const submenuBtn = e.currentTarget;
+      
+    console.log(submenuBtnPause.closest(submenuBtn));  
+    });
+  });
+    /*form*/
+    function validateForm() {
+      // let phone = document.querySelector('.input__tel')
+      //  let im = new Inputmask("+375 (99) 999-99-99")
+      //  im.mask(phone);
+      new window.JustValidate('.about__form', {
+        colorWrong: '#D52B1E',
+        rules: {
+          name: {
+            required: true
+          },
+          email: {
+            required: true,
+            email: true
+          },
+          message: {
+            required: true
+          }
+          /*phone: {
+            required: true,
+            function: (name, value) => {
+              const ph = phone.inputmask.unmaskedvalue();
+              return Number(ph) && ph.length === 10;
+            }
+          },*/
+        },
+        messages: {
+          email: {
+            required: "Вы не ввели e-mail"
+          },
+          name: "Вы не ввели имя",
+          message: "Вы не ввели сообщение",
+          /* phone: {
+             required: "Вы не ввели телефон",
+             function: "Недостаточное количество символов"
+           }*/
+        }
+      });
+    }
+    validateForm();
 
+  const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    spaceBetween: 30,
+    loopedSlides: 4,
+    autoplay: {
+      delay: 5000,
+    },
+
+    navigation: {
+      nextEl: '.button-next',
+      prevEl: '.button-prev',
+    },
+
+    centeredSlides: true,
+    slidesPerView: 4,
+    slidesPerGroup: 1,
+    /*breakpoints: {
+        // when window width is <= 320px
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 10
+        },
+        // when window width is <= 480px
+        480: {
+          slidesPerView: 2,
+          spaceBetween: 20
+        },
+        // when window width is <= 640px
+        640: {
+          slidesPerView: 3,
+          spaceBetween: 30
+        }
+      }*/
+
+
+
+
+
+
+  });
 
 
 })
-
