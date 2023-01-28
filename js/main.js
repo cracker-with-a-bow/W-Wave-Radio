@@ -132,17 +132,18 @@ document.addEventListener('DOMContentLoaded', function () {
     function (event) {
       broadcastsNothing.textContent = '';
       broadcastsItems.forEach(function (elem) {
-        elem.classList.remove('broadcasts__item_active')});
-        let broadcastsItem = document.querySelectorAll(`[data-target="${event.detail.value}"]`);
-        if (broadcastsItem.length !== 0) {
-          broadcastsItem.forEach(function (el) {
-            el.classList.add('broadcasts__item_active');
-          });
-        }
-        else {
-          broadcastsNothing.textContent = broadcastsNothingText;
-        }
-      
+        elem.classList.remove('broadcasts__item_active')
+      });
+      let broadcastsItem = document.querySelectorAll(`[data-target="${event.detail.value}"]`);
+      if (broadcastsItem.length !== 0) {
+        broadcastsItem.forEach(function (el) {
+          el.classList.add('broadcasts__item_active');
+        });
+      }
+      else {
+        broadcastsNothing.textContent = broadcastsNothingText;
+      }
+
     },
   );
 
@@ -157,69 +158,134 @@ document.addEventListener('DOMContentLoaded', function () {
       const path = e.currentTarget.dataset.path;
       playlistsNothing.textContent = '';
       playlistsItems.forEach(function (element) {
-        element.classList.remove('playlists__items_active')});
-        let playlistsItem = document.querySelectorAll(`[data-target="${path}"]`);
-        if (playlistsItem.length !== 0) {
-          playlistsItem.forEach(function (el) {
-            el.classList.add('playlists__items_active');
-          });
-        }
-        else {
-          playlistsNothing.textContent = playlistsNothingText;
-        }
-      
-    });
-  });
-
-  let submenuBtns = document.querySelectorAll('.submenu__btn');
-  let submenuBtnPause = document.querySelector('.submenu__btn-pause');
-  submenuBtns.forEach(function (element) {
-    element.addEventListener('click', function (e) {
-      const submenuBtn = e.currentTarget;
-      
-    console.log(submenuBtnPause.closest(submenuBtn));  
-    });
-  });
-    /*form*/
-    function validateForm() {
-      // let phone = document.querySelector('.input__tel')
-      //  let im = new Inputmask("+375 (99) 999-99-99")
-      //  im.mask(phone);
-      new window.JustValidate('.about__form', {
-        colorWrong: '#D52B1E',
-        rules: {
-          name: {
-            required: true
-          },
-          email: {
-            required: true,
-            email: true
-          },
-          message: {
-            required: true
-          }
-          /*phone: {
-            required: true,
-            function: (name, value) => {
-              const ph = phone.inputmask.unmaskedvalue();
-              return Number(ph) && ph.length === 10;
-            }
-          },*/
-        },
-        messages: {
-          email: {
-            required: "Вы не ввели e-mail"
-          },
-          name: "Вы не ввели имя",
-          message: "Вы не ввели сообщение",
-          /* phone: {
-             required: "Вы не ввели телефон",
-             function: "Недостаточное количество символов"
-           }*/
-        }
+        element.classList.remove('playlists__items_active')
       });
+      let playlistsItem = document.querySelectorAll(`[data-target="${path}"]`);
+      if (playlistsItem.length !== 0) {
+        playlistsItem.forEach(function (el) {
+          el.classList.add('playlists__items_active');
+        });
+      }
+      else {
+        playlistsNothing.textContent = playlistsNothingText;
+      }
+
+    });
+  });
+  /*
+    let submenuBtns = document.querySelectorAll('.submenu__btn');
+    let submenuBtnPause = document.querySelector('.submenu__btn-pause');
+    submenuBtns.forEach(function (element) {
+      element.addEventListener('click', function (e) {
+        const submenuBtn = e.currentTarget;
+        
+      console.log(submenuBtnPause.closest(submenuBtn));  
+      });
+    });*/
+
+  let myAudio = document.querySelector(".submenu__audio");
+  let btnsListen = document.querySelectorAll('.btn-listen-container');
+  
+  console.log(myAudio.paused);
+//запуск воспроизведения
+function playClip(media) {
+  media.play();
+}
+
+//стоп воспроизведения 
+function stopClip(media) {
+  media.pause();
+}
+
+
+  btnsListen.forEach(function (element) {
+    element.addEventListener('click', function (e) {
+      let activeBtn = e.currentTarget;
+      activeBtn.firstElementChild.classList.toggle('btn-listen_none')
+      activeBtn.firstElementChild.nextElementSibling.classList.toggle('btn-pause_active');   
+      
+      if (myAudio.paused === true) {
+        playClip(myAudio);
+      } else {       
+        stopClip(myAudio);
+      }    
+    })});
+  
+/*
+    let myVideo = document.querySelector(".submenu__audio");
+let btnlisten = document.querySelector(".btn-listen");
+let k2 = document.querySelector(".k2");
+    function playClip(media) {
+      media.play();
     }
-    validateForm();
+    
+    //стоп воспроизведения видео примера
+    function stopClip(media) {
+      media.pause();
+    }
+    
+    //Использование и демонстрация:
+    //получим медиа объект в переменную
+    
+    //запуск по onclick для кнопок:
+
+    btnlisten.addEventListener('click', function (e) {
+      console.log(myVideo.muted);
+    playClip(myVideo); //для кнопки "Play"
+    console.log(myVideo.muted);
+    });
+    k2.addEventListener('click', function (e) {
+      console.log(myVideo.muted);
+    stopClip(myVideo); //для кнопки "Stop"
+    console.log(myVideo.muted);
+  });*/
+
+
+
+
+
+
+  
+  /*form*/
+  function validateForm() {
+    // let phone = document.querySelector('.input__tel')
+    //  let im = new Inputmask("+375 (99) 999-99-99")
+    //  im.mask(phone);
+    new window.JustValidate('.about__form', {
+      colorWrong: '#D52B1E',
+      rules: {
+        name: {
+          required: true
+        },
+        email: {
+          required: true,
+          email: true
+        },
+        message: {
+          required: true
+        }
+        /*phone: {
+          required: true,
+          function: (name, value) => {
+            const ph = phone.inputmask.unmaskedvalue();
+            return Number(ph) && ph.length === 10;
+          }
+        },*/
+      },
+      messages: {
+        email: {
+          required: "Вы не ввели e-mail"
+        },
+        name: "Вы не ввели имя",
+        message: "Вы не ввели сообщение",
+        /* phone: {
+           required: "Вы не ввели телефон",
+           function: "Недостаточное количество символов"
+         }*/
+      }
+    });
+  }
+  validateForm();
 
   const swiper = new Swiper('.swiper', {
     // Optional parameters

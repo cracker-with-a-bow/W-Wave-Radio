@@ -25,6 +25,9 @@
 </head>
 
 <body>
+  <!--мелодия для проверки-->
+  <audio class="submenu__audio" src="/media/1.mp3">
+  </audio>
 
   <header class="header" aria-label="шапка сайта">
     <div class="header__part1 container flex">
@@ -138,24 +141,28 @@
         <div class="submenu__btns-container flex">
           <div class="submenu__earlier-on-air submenu__item flex">
 
-            <button class="btn-reset submenu__btn">
-              <svg class="submenu__btn-img" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <button class="btn-listen-container btn-reset submenu__btn" type="button" title="Play">
+              <svg class="submenu__btn-img btn-listen" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z"
                   fill="#A1A6B4" />
               </svg>
-              <svg class="submenu__btn-pause" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="submenu__btn-img-pause btn-pause" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_24531_3491)">
-                <path d="M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2Z" fill="#A1A6B4"/>
-                <rect x="9" y="8" width="2" height="8" rx="1" fill="white"/>
-                <rect x="13" y="8" width="2" height="8" rx="1" fill="white"/>
+                  <path
+                    d="M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2Z"
+                    fill="#A1A6B4" />
+                  <rect x="9" y="8" width="2" height="8" rx="1" fill="white" />
+                  <rect x="13" y="8" width="2" height="8" rx="1" fill="white" />
                 </g>
                 <defs>
-                <clipPath id="clip0_24531_3491">
-                <rect width="24" height="24" fill="white"/>
-                </clipPath>
+                  <clipPath id="clip0_24531_3491">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
                 </defs>
-                </svg>
+              </svg>
 
               <div class="submenu__text-container">
                 <p class="submenu__btn-descr">
@@ -168,12 +175,28 @@
             </button>
           </div>
           <div class="submenu__on-air-now submenu__item flex">
-
-            <button class="btn-reset submenu__btn">
-              <svg class="submenu__btn-img" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            
+            <button class="btn-listen-container btn-reset submenu__btn" type="button" title="Play">
+              <svg class="submenu__btn-img btn-listen" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z"
                   fill="#A1A6B4" />
+              </svg>
+              <svg class="submenu__btn-img-pause btn-pause" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_24531_3491)">
+                  <path
+                    d="M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2Z"
+                    fill="#A1A6B4" />
+                  <rect x="9" y="8" width="2" height="8" rx="1" fill="white" />
+                  <rect x="13" y="8" width="2" height="8" rx="1" fill="white" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_24531_3491">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
               </svg>
               <div class="submenu__text-container">
                 <p class="submenu__btn-descr">
@@ -295,13 +318,19 @@
                 <p class="podcasts__author">
                   Дмитрий Гутенберг
                 </p>
-                <button class="podcasts__btn-listen btn-reset">
-                  <svg class="podcasts__btn-img" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                <button class="podcasts__btn-listen btn-reset btn-listen-container">
+                  <svg class="podcasts__btn-img btn-listen" width="48" height="48" viewBox="0 0 48 48" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
                     <path
                       d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
                       fill="#A1A6B4" />
+                  </svg>
+                  <svg class="podcasts__btn-img btn-pause" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                    <rect x="19" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
+                    <rect x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
                   </svg>
                 </button>
               </div>
@@ -357,13 +386,19 @@
                 <p class="podcasts__author">
                   Анна Васильева
                 </p>
-                <button class="podcasts__btn-listen btn-reset">
-                  <svg class="podcasts__btn-img" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                <button class="podcasts__btn-listen btn-reset btn-listen-container">
+                  <svg class="podcasts__btn-img btn-listen" width="48" height="48" viewBox="0 0 48 48" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
                     <path
                       d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
                       fill="#A1A6B4" />
+                  </svg>
+                  <svg class="podcasts__btn-img btn-pause" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                    <rect x="19" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
+                    <rect x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
                   </svg>
                 </button>
               </div>
@@ -419,13 +454,19 @@
                 <p class="podcasts__author">
                   Пётр Дмитриевский
                 </p>
-                <button class="podcasts__btn-listen btn-reset">
-                  <svg class="podcasts__btn-img" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                <button class="podcasts__btn-listen btn-reset btn-listen-container">
+                  <svg class="podcasts__btn-img btn-listen" width="48" height="48" viewBox="0 0 48 48" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
                     <path
                       d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
                       fill="#A1A6B4" />
+                  </svg>
+                  <svg class="podcasts__btn-img btn-pause" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                    <rect x="19" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
+                    <rect x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
                   </svg>
                 </button>
               </div>
@@ -481,13 +522,19 @@
                 <p class="podcasts__author">
                   Пётр Дмитриевский
                 </p>
-                <button class="podcasts__btn-listen btn-reset">
-                  <svg class="podcasts__btn-img" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                <button class="podcasts__btn-listen btn-reset btn-listen-container">
+                  <svg class="podcasts__btn-img btn-listen" width="48" height="48" viewBox="0 0 48 48" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
                     <path
                       d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
                       fill="#A1A6B4" />
+                  </svg>
+                  <svg class="podcasts__btn-img btn-pause" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                    <rect x="19" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
+                    <rect x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
                   </svg>
                 </button>
               </div>
@@ -543,13 +590,19 @@
                 <p class="podcasts__author">
                   Дмитрий Гутенберг
                 </p>
-                <button class="podcasts__btn-listen btn-reset">
-                  <svg class="podcasts__btn-img" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                <button class="podcasts__btn-listen btn-reset btn-listen-container">
+                  <svg class="podcasts__btn-img btn-listen" width="48" height="48" viewBox="0 0 48 48" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
                     <path
                       d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
                       fill="#A1A6B4" />
+                  </svg>
+                  <svg class="podcasts__btn-img btn-pause" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                    <rect x="19" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
+                    <rect x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
                   </svg>
                 </button>
               </div>
@@ -605,13 +658,19 @@
                 <p class="podcasts__author">
                   Пётр Дмитриевский
                 </p>
-                <button class="podcasts__btn-listen btn-reset">
-                  <svg class="podcasts__btn-img" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                <button class="podcasts__btn-listen btn-reset btn-listen-container">
+                  <svg class="podcasts__btn-img btn-listen" width="48" height="48" viewBox="0 0 48 48" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
                     <path
                       d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
                       fill="#A1A6B4" />
+                  </svg>
+                  <svg class="podcasts__btn-img btn-pause" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                    <rect x="19" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
+                    <rect x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
                   </svg>
                 </button>
               </div>
@@ -729,13 +788,19 @@
                 <p class="podcasts__author">
                   Татьяна Флеганова
                 </p>
-                <button class="podcasts__btn-listen btn-reset">
-                  <svg class="podcasts__btn-img" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                <button class="podcasts__btn-listen btn-reset btn-listen-container">
+                  <svg class="podcasts__btn-img btn-listen" width="48" height="48" viewBox="0 0 48 48" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
                     <path
                       d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
                       fill="#A1A6B4" />
+                  </svg>
+                  <svg class="podcasts__btn-img btn-pause" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                    <rect x="19" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
+                    <rect x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
                   </svg>
                 </button>
               </div>
@@ -791,13 +856,19 @@
                 <p class="podcasts__author">
                   Дмитрий Гутенберг
                 </p>
-                <button class="podcasts__btn-listen btn-reset">
-                  <svg class="podcasts__btn-img" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                <button class="podcasts__btn-listen btn-reset btn-listen-container">
+                  <svg class="podcasts__btn-img btn-listen" width="48" height="48" viewBox="0 0 48 48" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
                     <path
                       d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
                       fill="#A1A6B4" />
+                  </svg>
+                  <svg class="podcasts__btn-img btn-pause" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                    <rect x="19" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
+                    <rect x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
                   </svg>
                 </button>
               </div>
@@ -853,13 +924,19 @@
                 <p class="podcasts__author">
                   Пётр Дмитриевский
                 </p>
-                <button class="podcasts__btn-listen btn-reset">
-                  <svg class="podcasts__btn-img" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                <button class="podcasts__btn-listen btn-reset btn-listen-container">
+                  <svg class="podcasts__btn-img btn-listen" width="48" height="48" viewBox="0 0 48 48" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
                     <path
                       d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
                       fill="#A1A6B4" />
+                  </svg>
+                  <svg class="podcasts__btn-img btn-pause" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                    <rect x="19" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
+                    <rect x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
                   </svg>
                 </button>
               </div>
@@ -915,13 +992,19 @@
                 <p class="podcasts__author">
                   Татьяна Флеганова
                 </p>
-                <button class="podcasts__btn-listen btn-reset">
-                  <svg class="podcasts__btn-img" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                <button class="podcasts__btn-listen btn-reset btn-listen-container">
+                  <svg class="podcasts__btn-img btn-listen" width="48" height="48" viewBox="0 0 48 48" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
                     <path
                       d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
                       fill="#A1A6B4" />
+                  </svg>
+                  <svg class="podcasts__btn-img btn-pause" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                    <rect x="19" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
+                    <rect x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
                   </svg>
                 </button>
               </div>
@@ -977,13 +1060,19 @@
                 <p class="podcasts__author">
                   Татьяна Флеганова
                 </p>
-                <button class="podcasts__btn-listen btn-reset">
-                  <svg class="podcasts__btn-img" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                <button class="podcasts__btn-listen btn-reset btn-listen-container">
+                  <svg class="podcasts__btn-img btn-listen" width="48" height="48" viewBox="0 0 48 48" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
                     <path
                       d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
                       fill="#A1A6B4" />
+                  </svg>
+                  <svg class="podcasts__btn-img btn-pause" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                    <rect x="19" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
+                    <rect x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
                   </svg>
                 </button>
               </div>
@@ -1068,9 +1157,12 @@
                   Анонсируется отдельно
                 </p>
                 <a href="#" class="broadcasts__link-more btn-reset btn-ui-kit1">Подробнее
-                <svg class="broadcasts__img-more" width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z" fill="#121723"/>
-</svg>  
+                  <svg class="broadcasts__img-more" width="21" height="8" viewBox="0 0 21 8" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z"
+                      fill="#121723" />
+                  </svg>
                 </a>
               </li>
               <li data-target="DmitryGutenberg" class="broadcasts__item broadcasts__item_active broadcasts__img2 col-3">
@@ -1081,9 +1173,12 @@
                   По&nbsp;понедельникам в&nbsp;10:00
                 </p>
                 <a href="#" class="btn-ui-kit1 broadcasts__link-more btn-reset">Подробнее
-                <svg class="broadcasts__img-more" width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z" fill="#121723"/>
-</svg>  
+                  <svg class="broadcasts__img-more" width="21" height="8" viewBox="0 0 21 8" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z"
+                      fill="#121723" />
+                  </svg>
                 </a>
               </li>
               <li data-target="DmitryGutenberg" class="broadcasts__item broadcasts__item_active broadcasts__img3 col-3">
@@ -1094,9 +1189,12 @@
                   По вторникам в 12:00
                 </p>
                 <a href="#" class="btn-ui-kit1 broadcasts__link-more btn-reset">Подробнее
-                <svg class="broadcasts__img-more" width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z" fill="#121723"/>
-</svg>  
+                  <svg class="broadcasts__img-more" width="21" height="8" viewBox="0 0 21 8" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z"
+                      fill="#121723" />
+                  </svg>
                 </a>
               </li>
               <li data-target="DmitryGutenberg" class="broadcasts__item broadcasts__item_active broadcasts__img4 col-3">
@@ -1107,9 +1205,12 @@
                   По&nbsp;пятницам в&nbsp;17:00
                 </p>
                 <a href="#" class="btn-ui-kit1 broadcasts__link-more btn-reset">Подробнее
-                <svg class="broadcasts__img-more" width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z" fill="#121723"/>
-</svg>  
+                  <svg class="broadcasts__img-more" width="21" height="8" viewBox="0 0 21 8" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z"
+                      fill="#121723" />
+                  </svg>
                 </a>
               </li>
               <li data-target="TatianaFleganova" class="broadcasts__item broadcasts__img5 col-3">
@@ -1120,9 +1221,12 @@
                   По&nbsp;субботам в&nbsp;10:00
                 </p>
                 <a href="#" class="btn-ui-kit1 broadcasts__link-more btn-reset">Подробнее
-                <svg class="broadcasts__img-more" width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z" fill="#121723"/>
-</svg>  
+                  <svg class="broadcasts__img-more" width="21" height="8" viewBox="0 0 21 8" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z"
+                      fill="#121723" />
+                  </svg>
                 </a>
               </li>
               <li data-target="AnnaVasilyeva" class="broadcasts__item broadcasts__img6 col-3">
@@ -1133,9 +1237,12 @@
                   По&nbsp;воскресеньям в&nbsp;15:30
                 </p>
                 <a href="#" class="btn-ui-kit1 broadcasts__link-more btn-reset">Подробнее
-                <svg class="broadcasts__img-more" width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z" fill="#121723"/>
-</svg>  
+                  <svg class="broadcasts__img-more" width="21" height="8" viewBox="0 0 21 8" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z"
+                      fill="#121723" />
+                  </svg>
                 </a>
               </li>
             </ul>
@@ -1168,10 +1275,11 @@
                     data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
                     aria-controls="panelsStayOpen-collapseOne">
                     Блогеры
-                    <svg class="guests__accordion-svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"/>
-                      <path d="M16 22L24 30L32 22" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
-                      </svg>
+                    <svg class="guests__accordion-svg" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                      <path d="M16 22L24 30L32 22" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square" />
+                    </svg>
                   </button>
                 </p>
                 <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
@@ -1216,10 +1324,11 @@
                     data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
                     aria-controls="panelsStayOpen-collapseTwo">
                     Арт-критики
-                    <svg class="guests__accordion-svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"/>
-                      <path d="M16 22L24 30L32 22" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
-                      </svg>
+                    <svg class="guests__accordion-svg" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                      <path d="M16 22L24 30L32 22" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square" />
+                    </svg>
                   </button>
                 </p>
                 <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
@@ -1240,10 +1349,11 @@
                     data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
                     aria-controls="panelsStayOpen-collapseThree">
                     Художники
-                    <svg class="guests__accordion-svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"/>
-                      <path d="M16 22L24 30L32 22" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
-                      </svg>
+                    <svg class="guests__accordion-svg" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                      <path d="M16 22L24 30L32 22" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square" />
+                    </svg>
                   </button>
                 </p>
                 <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
@@ -1264,10 +1374,11 @@
                     data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
                     aria-controls="panelsStayOpen-collapseFour">
                     Люди науки
-                    <svg class="guests__accordion-svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"/>
-                      <path d="M16 22L24 30L32 22" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
-                      </svg>
+                    <svg class="guests__accordion-svg" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                      <path d="M16 22L24 30L32 22" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square" />
+                    </svg>
                   </button>
                 </p>
                 <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
@@ -1288,10 +1399,11 @@
                     data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
                     aria-controls="panelsStayOpen-collapseFive">
                     Историки
-                    <svg class="guests__accordion-svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"/>
-                      <path d="M16 22L24 30L32 22" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
-                      </svg>
+                    <svg class="guests__accordion-svg" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                      <path d="M16 22L24 30L32 22" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square" />
+                    </svg>
                   </button>
                 </p>
                 <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
@@ -1312,10 +1424,11 @@
                     data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false"
                     aria-controls="panelsStayOpen-collapseSix">
                     Филологи
-                    <svg class="guests__accordion-svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"/>
-                      <path d="M16 22L24 30L32 22" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square"/>
-                      </svg>
+                    <svg class="guests__accordion-svg" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
+                      <path d="M16 22L24 30L32 22" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square" />
+                    </svg>
                   </button>
                 </p>
                 <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse"
@@ -2086,130 +2199,138 @@
                   <li class="genre__item">
                     <input class="genre__input" data-path="genre-Postpunk" type="radio" id="genre-Postpunk" name="genre"
                       value="Postpunk" checked>
-                      
+
                     <label class="genre__label" for="genre-Postpunk">
-                      <svg class="genre__svg" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg class="genre__svg" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_24531_3823)">
-                        <circle cx="15" cy="15" r="12" stroke="#A1A6B4" stroke-width="2"/>
+                          <circle cx="15" cy="15" r="12" stroke="#A1A6B4" stroke-width="2" />
                         </g>
                         <defs>
-                        <clipPath id="clip0_24531_3823">
-                        <rect width="30" height="30" fill="white"/>
-                        </clipPath>
+                          <clipPath id="clip0_24531_3823">
+                            <rect width="30" height="30" fill="white" />
+                          </clipPath>
                         </defs>
-                        </svg>
+                      </svg>
                       Постпанк</label>
                   </li>
                   <li class="genre__item">
                     <input class="genre__input" data-path="genre-hardcore" type="radio" id="genre-hardcore" name="genre"
                       value="hardcore">
                     <label class="genre__label" for="genre-hardcore">
-                      <svg class="genre__svg" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg class="genre__svg" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_24531_3823)">
-                        <circle cx="15" cy="15" r="12" stroke="#A1A6B4" stroke-width="2"/>
+                          <circle cx="15" cy="15" r="12" stroke="#A1A6B4" stroke-width="2" />
                         </g>
                         <defs>
-                        <clipPath id="clip0_24531_3823">
-                        <rect width="30" height="30" fill="white"/>
-                        </clipPath>
+                          <clipPath id="clip0_24531_3823">
+                            <rect width="30" height="30" fill="white" />
+                          </clipPath>
                         </defs>
-                        </svg>
+                      </svg>
                       Хардкор</label>
                   </li>
                   <li class="genre__item">
                     <input class="genre__input" data-path="genre-Punkrock" type="radio" id="genre-Punkrock" name="genre"
                       value="Punkrock">
                     <label class="genre__label" for="genre-Punkrock">
-                      <svg class="genre__svg" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg class="genre__svg" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_24531_3823)">
-                        <circle cx="15" cy="15" r="12" stroke="#A1A6B4" stroke-width="2"/>
+                          <circle cx="15" cy="15" r="12" stroke="#A1A6B4" stroke-width="2" />
                         </g>
                         <defs>
-                        <clipPath id="clip0_24531_3823">
-                        <rect width="30" height="30" fill="white"/>
-                        </clipPath>
+                          <clipPath id="clip0_24531_3823">
+                            <rect width="30" height="30" fill="white" />
+                          </clipPath>
                         </defs>
-                        </svg>
+                      </svg>
                       Панк-рок</label>
                   </li>
                   <li class="genre__item">
                     <input class="genre__input" data-path="genre-rock" type="radio" id="genre-rock" name="genre"
                       value="rock">
                     <label class="genre__label" for="genre-rock">
-                      <svg class="genre__svg" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg class="genre__svg" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_24531_3823)">
-                        <circle cx="15" cy="15" r="12" stroke="#A1A6B4" stroke-width="2"/>
+                          <circle cx="15" cy="15" r="12" stroke="#A1A6B4" stroke-width="2" />
                         </g>
                         <defs>
-                        <clipPath id="clip0_24531_3823">
-                        <rect width="30" height="30" fill="white"/>
-                        </clipPath>
+                          <clipPath id="clip0_24531_3823">
+                            <rect width="30" height="30" fill="white" />
+                          </clipPath>
                         </defs>
-                        </svg>
+                      </svg>
                       Рок</label>
                   </li>
                   <li class="genre__item">
                     <input class="genre__input" data-path="genre-progressiverock" type="radio"
                       id="genre-progressiverock" name="genre" value="progressiverock">
                     <label class="genre__label" for="genre-progressiverock">
-                      <svg class="genre__svg" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg class="genre__svg" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_24531_3823)">
-                        <circle cx="15" cy="15" r="12" stroke="#A1A6B4" stroke-width="2"/>
+                          <circle cx="15" cy="15" r="12" stroke="#A1A6B4" stroke-width="2" />
                         </g>
                         <defs>
-                        <clipPath id="clip0_24531_3823">
-                        <rect width="30" height="30" fill="white"/>
-                        </clipPath>
+                          <clipPath id="clip0_24531_3823">
+                            <rect width="30" height="30" fill="white" />
+                          </clipPath>
                         </defs>
-                        </svg>
+                      </svg>
                       Прогрессивный рок</label>
                   </li>
                   <li class="genre__item">
                     <input class="genre__input" data-path="genre-Electronicmusic" type="radio"
                       id="genre-Electronicmusic" name="genre" value="Electronicmusic">
                     <label class="genre__label" for="genre-Electronicmusic">
-                      <svg class="genre__svg" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg class="genre__svg" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_24531_3823)">
-                        <circle cx="15" cy="15" r="12" stroke="#A1A6B4" stroke-width="2"/>
+                          <circle cx="15" cy="15" r="12" stroke="#A1A6B4" stroke-width="2" />
                         </g>
                         <defs>
-                        <clipPath id="clip0_24531_3823">
-                        <rect width="30" height="30" fill="white"/>
-                        </clipPath>
+                          <clipPath id="clip0_24531_3823">
+                            <rect width="30" height="30" fill="white" />
+                          </clipPath>
                         </defs>
-                        </svg>
+                      </svg>
                       Электронная музыка</label>
                   </li>
                   <li class="genre__item">
                     <input class="genre__input" data-path="genre-Classicalmusic" type="radio" id="genre-Classicalmusic"
                       name="genre" value="Classicalmusic">
                     <label class="genre__label" for="genre-Classicalmusic">
-                      <svg class="genre__svg" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg class="genre__svg" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_24531_3823)">
-                        <circle cx="15" cy="15" r="12" stroke="#A1A6B4" stroke-width="2"/>
+                          <circle cx="15" cy="15" r="12" stroke="#A1A6B4" stroke-width="2" />
                         </g>
                         <defs>
-                        <clipPath id="clip0_24531_3823">
-                        <rect width="30" height="30" fill="white"/>
-                        </clipPath>
+                          <clipPath id="clip0_24531_3823">
+                            <rect width="30" height="30" fill="white" />
+                          </clipPath>
                         </defs>
-                        </svg>
+                      </svg>
                       Классическая музыка</label>
                   </li>
                   <li class="genre__item">
                     <input class="genre__input" data-path="genre-soundsNature" type="radio" id="genre-soundsNature"
                       name="genre" value="soundsNature">
                     <label class="genre__label" for="genre-soundsNature">
-                      <svg class="genre__svg" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg class="genre__svg" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_24531_3823)">
-                        <circle cx="15" cy="15" r="12" stroke="#A1A6B4" stroke-width="2"/>
+                          <circle cx="15" cy="15" r="12" stroke="#A1A6B4" stroke-width="2" />
                         </g>
                         <defs>
-                        <clipPath id="clip0_24531_3823">
-                        <rect width="30" height="30" fill="white"/>
-                        </clipPath>
+                          <clipPath id="clip0_24531_3823">
+                            <rect width="30" height="30" fill="white" />
+                          </clipPath>
                         </defs>
-                        </svg>
+                      </svg>
                       Звуки природы и шум города</label>
                   </li>
                 </ul>
