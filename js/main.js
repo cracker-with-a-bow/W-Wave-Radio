@@ -211,39 +211,6 @@ function stopClip(media) {
       }    
     })});
   
-/*
-    let myVideo = document.querySelector(".submenu__audio");
-let btnlisten = document.querySelector(".btn-listen");
-let k2 = document.querySelector(".k2");
-    function playClip(media) {
-      media.play();
-    }
-    
-    //стоп воспроизведения видео примера
-    function stopClip(media) {
-      media.pause();
-    }
-    
-    //Использование и демонстрация:
-    //получим медиа объект в переменную
-    
-    //запуск по onclick для кнопок:
-
-    btnlisten.addEventListener('click', function (e) {
-      console.log(myVideo.muted);
-    playClip(myVideo); //для кнопки "Play"
-    console.log(myVideo.muted);
-    });
-    k2.addEventListener('click', function (e) {
-      console.log(myVideo.muted);
-    stopClip(myVideo); //для кнопки "Stop"
-    console.log(myVideo.muted);
-  });*/
-
-
-
-
-
 
   
   /*form*/
