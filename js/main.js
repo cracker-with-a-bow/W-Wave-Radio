@@ -172,16 +172,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     });
   });
-  /*
-    let submenuBtns = document.querySelectorAll('.submenu__btn');
-    let submenuBtnPause = document.querySelector('.submenu__btn-pause');
-    submenuBtns.forEach(function (element) {
-      element.addEventListener('click', function (e) {
-        const submenuBtn = e.currentTarget;
-        
-      console.log(submenuBtnPause.closest(submenuBtn));  
-      });
-    });*/
+  
 
   let myAudio = document.querySelector(".submenu__audio");
   let btnsListen = document.querySelectorAll('.btn-listen-container');
@@ -259,7 +250,8 @@ function stopClip(media) {
     direction: 'horizontal',
     loop: true,
     spaceBetween: 30,
-    loopedSlides: 4,
+    
+    
     autoplay: {
       delay: 5000,
     },
@@ -269,26 +261,27 @@ function stopClip(media) {
       prevEl: '.button-prev',
     },
 
-    centeredSlides: true,
-    slidesPerView: 4,
-    slidesPerGroup: 1,
-    /*breakpoints: {
-        // when window width is <= 320px
-        320: {
-          slidesPerView: 1,
-          spaceBetween: 10
-        },
-        // when window width is <= 480px
-        480: {
-          slidesPerView: 2,
-          spaceBetween: 20
-        },
-        // when window width is <= 640px
-        640: {
-          slidesPerView: 3,
-          spaceBetween: 30
-        }
-      }*/
+    centeredSlides: false,
+    
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 5
+      },
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+        
+      },
+      
+      // when window width is >= 640px
+      1300: {
+        slidesPerView: 4,
+        spaceBetween: 30
+      }
+    }
 
 
 
