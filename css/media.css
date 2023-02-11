@@ -1,0 +1,131 @@
+@media (max-width: 1285px) {
+
+    .header__logo-img {
+        max-width: 112px;
+    }
+
+    .header__part1 {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+        width: 100%;
+        padding-top: 18px;
+        padding-bottom: 19px;
+    }
+
+    .menu-container {
+        width: 100%;
+    }
+
+    .menu {
+        margin-right: auto;
+    }
+
+    .menu__list-items {
+        gap: 58.57px;
+    }
+
+    .submenu__age {
+        display: none;
+    }
+
+    /*.swiper-slide-active , .swiper-slide-next {
+        max-width: 397px;
+    }*/
+
+    .container {
+        max-width: 848px;
+    }
+
+    .hero {
+        padding-bottom: 36px;
+    }
+
+    .header__submenu-list {
+        gap: 28.5px;
+    }
+
+    .submenu {
+        gap: 34px;
+        min-height: 58px;
+    }
+
+    .submenu__btns-container {
+        min-width: 303px;
+    }
+
+    .submenu__btn-descr {
+        margin-bottom: 5px;
+    }
+
+    .submenu__item {
+        padding-left: 10px;
+    }
+
+    .hero__descr {
+        margin-bottom: 19px;
+    }
+
+    .hero__img-container {
+        background-size: 258px 260px;
+        background-position-x: center;
+        background-position-y: center;
+    }
+
+    .podcasts__item {
+        max-width: 48%;
+    }
+
+    .podcasts__info-text {
+        padding: 24px 30px 24px 32px;
+    }
+
+    .podcasts__social-activity {
+        padding: 8px 0 7px 23px;
+    }
+
+    .podcasts__btn-listen {
+        right: 6%;
+    }
+
+    .broadcasts__item {
+        width: 47%;
+        padding: 167px 6px 18px 15px;
+    }
+
+    .broadcasts__list {
+        justify-content: space-between;
+        gap: 29px;
+    }
+
+    .choices__inner {
+        min-height: 41px;
+    }
+
+    .broadcasts__title {
+        margin-bottom: 8px;
+    }
+
+    .broadcasts__archive {
+        position: absolute;
+        top: 41%;
+        left: 0;
+        max-width: 265px;
+        padding: 114px 0 8px 13px;
+        background-position-x: 12px;
+    }
+
+    .guests__accordion {
+        padding-top: 4px;
+    }
+
+    .guests__info {
+        padding-top: 3px;
+    }
+
+    .guests__accordion-button:not(.collapsed) {
+        padding-top: 35px;
+    }
+
+
+}

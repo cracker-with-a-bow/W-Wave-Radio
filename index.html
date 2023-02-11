@@ -278,7 +278,7 @@
           </form>
         </div>
         <div class="hero__content row">
-          <div class="hero__text-container col-xxl-7 col-xl-7 col-lg-7 col-md-12">
+          <div class="hero__text-container col-xxl-7 col-xl-7 col-lg-8 col-md-12">
             <h1 class="hero__title">
               Радио <span class="hero__title_italic">W-Wawe</span>
             </h1>
@@ -1124,8 +1124,8 @@
     </section>
     <section class="broadcasts section-offset" aria-label="Передачи">
       <div class="container">
-        <div class="row">
-          <article class="broadcasts__author flex col-lg-3">
+        <div class="row broadcasts__row">
+          <article class="broadcasts__author flex col-lg-4 col-xl-3">
             <div class="broadcasts__task">
               <h2 class="broadcasts__title section__title">
                 Передачи
@@ -1140,16 +1140,9 @@
                 <option value="PyotrDmitrievsky">Пётр Дмитриевский</option>
               </select>
             </div>
-            <div class="broadcasts__archive">
-              <a class="btn-reset broadcasts__link-archive black-btn" href="#">
-                Архив
-              </a>
-              <p class="broadcasts__text broadcasts__text-for-archive">
-                В&nbsp;архив попадают все передачи, которые вы&nbsp;пропустили! Enjoy:)
-              </p>
-            </div>
+            
           </article>
-          <article class="broadcasts__content col-lg-9">
+          <article class="broadcasts__content col-lg-8 col-xl-9">
             <p class="broadcasts__nothing"></p>
             <ul class="broadcasts__list list-reset flex">
               <li data-target="DmitryGutenberg" class="broadcasts__item broadcasts__item_active broadcasts__img1 col-3">
@@ -1216,7 +1209,7 @@
                   </svg>
                 </a>
               </li>
-              <li data-target="TatianaFleganova" class="broadcasts__item broadcasts__img5 col-3">
+              <li data-target="DmitryGutenberg" class="broadcasts__item broadcasts__item_active broadcasts__img5 col-3">
                 <p class="broadcasts__item-title">
                   Тонкости эпох
                 </p>
@@ -1232,7 +1225,7 @@
                   </svg>
                 </a>
               </li>
-              <li data-target="AnnaVasilyeva" class="broadcasts__item broadcasts__img6 col-3">
+              <li data-target="DmitryGutenberg" class="broadcasts__item broadcasts__item_active broadcasts__img6 col-3">
                 <p class="broadcasts__item-title">
                   Живые мысли
                 </p>
@@ -1249,6 +1242,14 @@
                 </a>
               </li>
             </ul>
+            <div class="broadcasts__archive">
+              <a class="btn-reset broadcasts__link-archive black-btn" href="#">
+                Архив
+              </a>
+              <p class="broadcasts__text broadcasts__text-for-archive">
+                В&nbsp;архив попадают все передачи, которые вы&nbsp;пропустили! Enjoy:)
+              </p>
+            </div>
           </article>
         </div>
       </div>
@@ -1262,7 +1263,7 @@
           <p class="guests__text_bold">
             У&nbsp;нас бывают:
           </p>
-          <p class="guests__text col-lg-9">
+          <p class="guests__text col-xl-9 col-lg-8">
             Блогеры, арт-критики и&nbsp;деятели
             искусства, музыканты, молодые учёные
             и&nbsp;люди науки, историки, филологи
@@ -2536,7 +2537,11 @@
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide slider1 ">
-                <img src="./img/DmitryGutenberg.jpg" class="swiper__img" alt="Дмитрий Гутенберг">
+                <picture>
+                  <source srcset="./img/DmitryGutenberg.jpg" media="(max-width: 769px)">
+                  <source srcset="./img/DmitryGutenberg-1024.jpg" media="(max-width: 1285px)">
+                  <img src="./img/DmitryGutenberg.jpg" class="swiper__img" alt="Дмитрий Гутенберг">
+                </picture>
                 <h4 class="about__name">
                   Дмитрий Гутенберг
                 </h4>
@@ -2545,7 +2550,11 @@
                 </p>
               </div>
               <div class="swiper-slide slider2">
-                <img src="./img/AnnaVasilyeva.jpg" class="swiper__img" alt="Анна Васильева">
+                <picture>
+                  <source srcset="./img/AnnaVasilyeva.jpg" media="(max-width: 769px)">
+                  <source srcset="./img/AnnaVasilyeva-1024.jpg" media="(max-width: 1285px)">
+                  <img src="./img/AnnaVasilyeva.jpg" class="swiper__img" alt="Дмитрий Гутенберг">
+                </picture>
                 <h4 class="about__name">
                   Анна Васильева
                 </h4>
@@ -2554,7 +2563,11 @@
                 </p>
               </div>
               <div class="swiper-slide slider3">
-                <img src="./img/PyotrDmitrievsky.jpg" class="swiper__img" alt="Пётр Дмитриевский">
+                <picture>
+                  <source srcset="./img/PyotrDmitrievsky.jpg" media="(max-width: 769px)">
+                  <source srcset="./img/PyotrDmitrievsky-1024.jpg" media="(max-width: 1285px)">
+                  <img src="./img/PyotrDmitrievsky.jpg" class="swiper__img" alt="Дмитрий Гутенберг">
+                </picture>
                 <h4 class="about__name">
                   Пётр Дмитриевский
                 </h4>
@@ -2563,7 +2576,11 @@
                 </p>
               </div>
               <div class="swiper-slide slider4">
-                <img src="./img/TatianaFleganova.jpg" class="swiper__img" alt="Татьяна Флеганова">
+                <picture>
+                  <source srcset="./img/TatianaFleganova.jpg" media="(max-width: 769px)">
+                  <source srcset="./img/TatianaFleganova-1024.jpg" media="(max-width: 1285px)">
+                  <img src="./img/TatianaFleganova.jpg" class="swiper__img" alt="Дмитрий Гутенберг">
+                </picture>
                 <h4 class="about__name">
                   Татьяна Флеганова
                 </h4>
@@ -2572,7 +2589,11 @@
                 </p>
               </div>
               <div class="swiper-slide slider5">
-                <img src="./img/FedorProkopiev.jpg" class="swiper__img" alt="Фёдор Прокопьев">
+                <picture>
+                  <source srcset="./img/FedorProkopiev.jpg" media="(max-width: 769px)">
+                  <source srcset="./img/FedorProkopiev-1024.jpg" media="(max-width: 1285px)">
+                  <img src="./img/FedorProkopiev.jpg" class="swiper__img" alt="Дмитрий Гутенберг">
+                </picture>
                 <h4 class="about__name">
                   Фёдор Прокопьев
                 </h4>
@@ -2581,7 +2602,11 @@
                 </p>
               </div>
               <div class="swiper-slide slider6">
-                <img src="./img/SvetlanaKortneva.jpg" class="swiper__img" alt="Светлана Кортнева">
+                <picture>
+                  <source srcset="./img/SvetlanaKortneva.jpg" media="(max-width: 769px)">
+                  <source srcset="./img/SvetlanaKortneva-1024.jpg" media="(max-width: 1285px)">
+                  <img src="./img/SvetlanaKortneva.jpg" class="swiper__img" alt="Дмитрий Гутенберг">
+                </picture>
                 <h4 class="about__name">
                   Светлана Кортнева
                 </h4>

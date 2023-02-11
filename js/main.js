@@ -177,8 +177,7 @@ document.addEventListener('DOMContentLoaded', function () {
   let myAudio = document.querySelector(".submenu__audio");
   let btnsListen = document.querySelectorAll('.btn-listen-container');
   
-  console.log(myAudio.paused);
-//запуск воспроизведения
+  //запуск воспроизведения
 function playClip(media) {
   media.play();
 }
@@ -272,12 +271,11 @@ function stopClip(media) {
       // when window width is >= 480px
       480: {
         slidesPerView: 2,
-        spaceBetween: 10,
+        spaceBetween: 30,
         
       },
       
-      // when window width is >= 640px
-      1300: {
+      1320: {
         slidesPerView: 4,
         spaceBetween: 30
       }
