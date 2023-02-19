@@ -1146,14 +1146,9 @@ color: var(--black);
 }
 
 .guests__list {
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
-.guests__item {
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 16px;
+  display: inline-block;
+  max-width: 730px;
+  columns: 4;
 }
 
 .guests__person {
@@ -1344,14 +1339,13 @@ color: var(--black);
   margin-bottom: 5px;
 }
 
-.genre__list-form {
-  margin-bottom: 38px;
-  padding-bottom: 22px;
-  border-bottom: 1px solid #D2D5DD;
+.playlists__text {
+  padding-top: 39px;
 }
 
 
 .playlists__text-img {
+  padding-top: 0;
   padding-bottom: 36px;
   font-style: italic;
   font-weight: 300;
@@ -1416,6 +1410,19 @@ stroke: var(--btn-violet-color);
   r: 10px;
 }
 
+.playlists__text-copy {
+  display: none;
+  padding-top: 38px;
+}
+
+.playlists__text-original {
+  padding-top: 38px;
+}
+
+.playlists__text-line {
+  border-top: 1px solid #D2D5DD;
+}
+
 .playlists__songwriters {
   padding-top: 14px;
 }
@@ -1427,15 +1434,12 @@ stroke: var(--btn-violet-color);
 
 .playlists__item {
   display: none;
+  gap: 16px;
   position: relative;
   min-width: 160px;
   padding-bottom: 16px;
   border: 1px solid #E6E8EC;
   transition: all 0.3s ease-in-out;
-}
-
-.playlists__img {
-  margin-bottom: 16px;
 }
 
 .playlists__group__name {
@@ -1512,7 +1516,8 @@ stroke: var(--btn-violet-color);
 }
 
 .playlists__items_active {
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 .playlists__country {
