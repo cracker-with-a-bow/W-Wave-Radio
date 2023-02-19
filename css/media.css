@@ -88,6 +88,14 @@
         right: 6%;
     }
 
+    .broadcasts__row {
+        justify-content: space-between;
+    }
+
+    .broadcasts__content {
+        width: 66.66666667%;
+    }
+
     .broadcasts__item {
         width: 47%;
         padding: 167px 6px 18px 15px;
@@ -123,11 +131,7 @@
     }
 
     .guests__info {
-        padding-top: 3px;
-    }
-
-    .accordion-body {
-    padding: 27px 0 18px 0;
+        padding-top: 1px;
     }
 
     .guests__accordion-button:not(.collapsed) {
@@ -139,10 +143,9 @@
         gap: 25px;
     }
 
-    .guests__link-person {
-    margin-bottom: 12px;
+    .guests__person-img {
+        margin-bottom: 13px;
     }
-
 
     .playlists .row {
         flex-direction: column;
@@ -157,6 +160,10 @@
         max-height: 168px;
     }
 
+    .playlists__songwriters {
+        width: 100%;
+    }
+
     .playlists__text-copy {
         display: block;
     }
@@ -169,6 +176,7 @@
         flex-direction: row;
         align-items: center;
         gap: 9px;
+        width: 33.33333333%;
         max-width: 254px;
         padding: 0;
     }
@@ -189,5 +197,61 @@
         left: 0;
     }
 
+    .products {
+        padding-bottom: 92px;
+    }
+
+    .product__br-text {
+        display: inline;
+    }
+
+    .product__photo {
+        position: relative;
+        top: 18%;
+    }
+
+    .product__new {
+        max-width: 97px;
+    top: 19%;
+    left: 14px;
+    z-index: 2;
+    }
+
+    .about__img-line {
+        display: none;
+    }
     
+    .about__row1 {
+        gap: 16px;
+    }
+
+    .button-prev, .button-next  {
+    top: 32%;
+    }
+
+    .about__name {
+        margin-bottom: 7px;
+    }
+
+    .about__form {
+        padding-top: 37px;
+    }
+
+    .about__inputs {
+        margin-bottom: 31px;
+        padding-top: 30px;
+    }
+
+    .form__input {
+        padding: 24px 32px;
+    }
+
+    .footer__container {
+        justify-content: flex-start;
+        gap: 19.7%;
+    }
+
+    .footer__menu-list {
+        column-gap: 109px;
+    }
 }
