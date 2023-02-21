@@ -3,30 +3,25 @@ document.addEventListener('DOMContentLoaded', function () {
 
   //burger
   let menuBtn = document.querySelector('.menu-btn');
-  let menu = document.querySelector('.menu__list-items');
+  let menu = document.querySelector('.menu');
+  let menuList = document.querySelector('.menu__list-items');
   menuBtn.addEventListener('click', function () {
     menuBtn.classList.toggle('active');
-    menu.classList.toggle('active');
+    menu.classList.toggle('menu-active');
+    menuList.classList.toggle('menu__list-active');
     document.body.classList.toggle('stop-scroll');
-
-  })
-
-
-  let menuBtnOne = document.querySelector('.menu-btn');
-  let menuContainer = document.querySelector('.menu');
-  menuBtnOne.addEventListener('click', function () {
-    menuContainer.classList.remove('active');
-
-
     let menuLinks = document.querySelectorAll('.menu__link');
     menuLinks.forEach(function (el) {
       el.addEventListener('click', function () {
         menuBtn.classList.remove('active');
-        menu.classList.remove('active');
+        menu.classList.remove('menu-active');
+        menuList.classList.remove('menu__list-active');
         document.body.classList.remove('stop-scroll');
       })
     })
   })
+
+
 
   //search
 
