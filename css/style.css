@@ -1659,6 +1659,10 @@ fill: var(--black);
 margin-bottom: 28px;
 }
 
+.about__img-container {
+justify-content: space-between;
+}
+
 .about__img-line {
   background-position: center;
   background-image: url(../img/Spiral.png);
@@ -1667,7 +1671,7 @@ margin-bottom: 28px;
 }
 
 .about__img-star {
-  min-width: 255px;
+  min-width: 230px;
   background-position-x: center;
   background-image: url(../img/Dawn.png);
   background-repeat: no-repeat;
@@ -1839,8 +1843,7 @@ textarea.form-control {
   left: 30px;
 }
 
-.form-group input::placeholder {
-  font-family: 'Roboto';
+.form__input::placeholder {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;

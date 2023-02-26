@@ -30,8 +30,9 @@
   </audio>
 
   <header class="header" aria-label="шапка сайта">
+    <div class="header__background-for-mobile"></div>
     <div class="header__part1 container flex">
-       <div class="conteiner-logo">
+      <div class="conteiner-logo">
         <a href="#" class="header__logo-link">
           <img src="img/logo.svg" class="header__logo-img" alt="логотип фирмы">
         </a>
@@ -175,7 +176,7 @@
             </button>
           </div>
           <div class="submenu__on-air-now submenu__item flex">
-            
+
             <button class="btn-listen-container btn-reset submenu__btn" type="button" title="Play">
               <svg class="submenu__btn-img btn-listen" width="20" height="20" viewBox="0 0 20 20" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -776,7 +777,7 @@
             </li>
 
 
-            
+
             <li class="podcasts__item col-md-12 col-lg-6 podcasts__img8">
               <p class="podcasts__date">
                 18&nbsp;мая
@@ -1140,7 +1141,7 @@
                 <option value="PyotrDmitrievsky">Пётр Дмитриевский</option>
               </select>
             </div>
-            
+
           </article>
           <article class="broadcasts__content col-lg-8 col-xl-9 col-md-12">
             <p class="broadcasts__nothing"></p>
@@ -1289,36 +1290,36 @@
                 <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
                   aria-labelledby="panelsStayOpen-headingOne">
                   <div class="accordion-body guests__list flex">
-                    
-                      <button data-path="Sergey-Denisov" class="guests__link-person btn-reset">Сергей Денисов</button>
-                      <button data-path="Matvey-Mechnikov" class="guests__link-person btn-reset">Матвей
-                        Мечников</button>
-                      <button data-path="Konstantin-Prusino" class="guests__link-person btn-reset">Константин
-                        Прусино</button>
-                      <button data-path="Ivan-Kalitnikov" class="guests__link-person btn-reset">Иван Калитников</button>
-                    
-                    
-                      <button data-path="Evgeny-Voinovsky" class="guests__link-person btn-reset">Евгений
-                        Войновский</button>
-                      <button data-path="Olga-Martynova" class="guests__link-person btn-reset">Ольга Мартынова</button>
-                      <button data-path="Dmitry-Mikhalok" class="guests__link-person btn-reset">Дмитрий Михалок</button>
-                      <button data-path="Pyotr-Piotrovsky" class="guests__link-person btn-reset">Пётр
-                        Пиотровский</button>
-                    
-                    
-                      <button data-path="Oleg-Sviridovsky" class="guests__link-person btn-reset">Олег
-                        Свиридовский</button>
-                      <button data-path="Vladislav-Kaupers" class="guests__link-person btn-reset">Владислав
-                        Кауперс</button>
-                      <button data-path="Mikhail-Pozhitnikov" class="guests__link-person btn-reset">Михаил
-                        Пожитников</button>
-                      <button data-path="George-Poluyan" class="guests__link-person btn-reset">Георгий Полуян</button>
-                    
-                    
-                      <button data-path="Denis-Telman" class="guests__link-person btn-reset">Денис Тельман</button>
-                      <button data-path="Yuri-Gorin" class="guests__link-person btn-reset">Юрий Горин</button>
-                      <button data-path="Maxim-Sergeev" class="guests__link-person btn-reset">Максим Сергеев</button>
-                    
+
+                    <button data-path="Sergey-Denisov" class="guests__link-person btn-reset">Сергей Денисов</button>
+                    <button data-path="Matvey-Mechnikov" class="guests__link-person btn-reset">Матвей
+                      Мечников</button>
+                    <button data-path="Konstantin-Prusino" class="guests__link-person btn-reset">Константин
+                      Прусино</button>
+                    <button data-path="Ivan-Kalitnikov" class="guests__link-person btn-reset">Иван Калитников</button>
+
+
+                    <button data-path="Evgeny-Voinovsky" class="guests__link-person btn-reset">Евгений
+                      Войновский</button>
+                    <button data-path="Olga-Martynova" class="guests__link-person btn-reset">Ольга Мартынова</button>
+                    <button data-path="Dmitry-Mikhalok" class="guests__link-person btn-reset">Дмитрий Михалок</button>
+                    <button data-path="Pyotr-Piotrovsky" class="guests__link-person btn-reset">Пётр
+                      Пиотровский</button>
+
+
+                    <button data-path="Oleg-Sviridovsky" class="guests__link-person btn-reset">Олег
+                      Свиридовский</button>
+                    <button data-path="Vladislav-Kaupers" class="guests__link-person btn-reset">Владислав
+                      Кауперс</button>
+                    <button data-path="Mikhail-Pozhitnikov" class="guests__link-person btn-reset">Михаил
+                      Пожитников</button>
+                    <button data-path="George-Poluyan" class="guests__link-person btn-reset">Георгий Полуян</button>
+
+
+                    <button data-path="Denis-Telman" class="guests__link-person btn-reset">Денис Тельман</button>
+                    <button data-path="Yuri-Gorin" class="guests__link-person btn-reset">Юрий Горин</button>
+                    <button data-path="Maxim-Sergeev" class="guests__link-person btn-reset">Максим Сергеев</button>
+
                   </div>
                 </div>
               </div>
@@ -1454,7 +1455,12 @@
               <img src="./img/somebody.png" alt="заглушка пока никто не выбран">
             </div>
             <div class="guests__person" data-target="Olga-Martynova">
-              <img class="guests__person-img" src="./img/olga_martinova.jpg" alt="Ольга Мартынова">
+              <picture>
+                <source srcset="./img/olga_martinova_768.jpg" media="(max-width: 991.5px)">
+                <source srcset="./img/olga_martinova.jpg" media="(max-width: 480px)">
+                <img class="guests__person-img" src="./img/olga_martinova.jpg" alt="Ольга Мартынова">
+              </picture>
+
               <ul class="guests__social list-reset flex">
                 <li class="guests__social-link">
                   <a href="#" class="guests__insta">
@@ -2345,14 +2351,14 @@
             <div class="playlists__text-original">
               <p class="broadcasts__text playlists__text playlists__text-line">
                 Раздел &laquo;Плейлисты&raquo; может содержать
-                информацию, не&nbsp;предназначенную 
+                информацию, не&nbsp;предназначенную
                 для&nbsp;несовершеннолетних
               </p>
               <p class="broadcasts__text playlists__text playlists__text-img">
                 © 2021 l W-Wave
               </p>
             </div>
-            
+
           </article>
           <article class="playlists__songwriters col-xl-8 col-lg-12">
             <p class="playlists__nothing"></p>
@@ -2361,109 +2367,112 @@
                 <img src="./img/flag-russian.jpg" alt="отметка российский исполнитель" class="playlists__country">
                 <img class="playlists__img" src="./img/ploho.jpg" alt="имя исполнителя Ploho">
                 <div class="playlists__text-container">
-                <p class="playlists__group__name">Ploho</p>
-                <p class="small-text-gray playlists__descr">
-                  3&nbsp;последних альбома
-                </p>
+                  <p class="playlists__group__name">Ploho</p>
+                  <p class="small-text-gray playlists__descr">
+                    3&nbsp;последних альбома
+                  </p>
                 </div>
               </li>
               <li data-target="genre-Postpunk" class="playlists__items_active playlists__item col-xl-2 col-lg-4">
                 <img src="./img/flag-russian.jpg" alt="отметка российский исполнитель" class="playlists__country">
                 <img class="playlists__img" src="./img/MolchatDoma.jpg" alt="имя исполнителя Molchat Doma">
                 <div class="playlists__text-container">
-                <p class="playlists__group__name">Molchat Doma</p>
-                <p class="small-text-gray playlists__descr">
-                  Все песни
-                </p>
+                  <p class="playlists__group__name">Molchat Doma</p>
+                  <p class="small-text-gray playlists__descr">
+                    Все песни
+                  </p>
                 </div>
               </li>
               <li data-target="genre-Postpunk" class="playlists__items_active playlists__item col-xl-2 col-lg-4">
                 <img src="./img/flag-russian.jpg" alt="отметка российский исполнитель" class="playlists__country">
                 <img class="playlists__img" src="./img/Motorama.jpg" alt="имя исполнителя Motorama">
                 <div class="playlists__text-container">
-                <p class="playlists__group__name">Motorama</p>
-                <p class="small-text-gray playlists__descr">
-                  Все синглы
-                </p>
+                  <p class="playlists__group__name">Motorama</p>
+                  <p class="small-text-gray playlists__descr">
+                    Все синглы
+                  </p>
                 </div>
               </li>
               <li data-target="genre-Postpunk" class="playlists__items_active playlists__item col-xl-2 col-lg-4">
                 <img src="./img/flag-russian.jpg" alt="отметка российский исполнитель" class="playlists__country">
                 <img class="playlists__img" src="./img/HumanTetris.jpg" alt="имя исполнителя Human Tetris">
                 <div class="playlists__text-container">
-                <p class="playlists__group__name">Human Tetris</p>
-                <p class="small-text-gray playlists__descr">
-                  3&nbsp;последних альбома
-                </p>
+                  <p class="playlists__group__name">Human Tetris</p>
+                  <p class="small-text-gray playlists__descr">
+                    3&nbsp;последних альбома
+                  </p>
                 </div>
               </li>
               <li data-target="genre-Postpunk" class="playlists__items_active playlists__item col-xl-2 col-lg-4">
                 <img src="./img/flag-russian.jpg" alt="отметка российский исполнитель" class="playlists__country">
                 <img class="playlists__img" src="./img/buerak.jpg" alt="имя исполнителя Буерак">
                 <div class="playlists__text-container">
-                <p class="playlists__group__name">Буерак</p>
-                <p class="small-text-gray playlists__descr">Все EP</p></div>
+                  <p class="playlists__group__name">Буерак</p>
+                  <p class="small-text-gray playlists__descr">Все EP</p>
+                </div>
               </li>
               <li data-target="genre-Postpunk" class="playlists__items_active playlists__item col-xl-2 col-lg-4">
                 <img src="./img/flag-russian.jpg" alt="отметка российский исполнитель" class="playlists__country">
                 <img class="playlists__img" src="./img/iulskieDni.jpg" alt="имя исполнителя Июльские Дни">
                 <div class="playlists__text-container">
-                <p class="playlists__group__name">Июльские Дни</p>
-                <p class="small-text-gray playlists__descr">
-                  Альбом «Колокол»
-                </p>
+                  <p class="playlists__group__name">Июльские Дни</p>
+                  <p class="small-text-gray playlists__descr">
+                    Альбом «Колокол»
+                  </p>
                 </div>
               </li>
               <li data-target="genre-Postpunk" class="playlists__items_active playlists__item col-xl-2 col-lg-4">
                 <img src="./img/flag-gr-br.jpg" alt="отметка исполнитель из Великобритании" class="playlists__country">
                 <img class="playlists__img" src="./img/JoyDivision.jpg" alt="имя исполнителя Joy Division">
                 <div class="playlists__text-container">
-                <p class="playlists__group__name">Joy Division</p>
-                <p class="small-text-gray playlists__descr">
-                  Лучшее за&nbsp;всё время
-                </p>
+                  <p class="playlists__group__name">Joy Division</p>
+                  <p class="small-text-gray playlists__descr">
+                    Лучшее за&nbsp;всё время
+                  </p>
                 </div>
               </li>
               <li data-target="genre-Postpunk" class="playlists__items_active playlists__item col-xl-2 col-lg-4">
                 <img src="./img/flag-gr-br.jpg" alt="отметка исполнитель из Великобритании" class="playlists__country">
                 <img class="playlists__img" src="./img/TheCure.jpg" alt="имя исполнителя The Cure">
                 <div class="playlists__text-container">
-                <p class="playlists__group__name">The Cure</p>
-                <p class="small-text-gray playlists__descr">Лучшее за&nbsp;всё время</p></div>
+                  <p class="playlists__group__name">The Cure</p>
+                  <p class="small-text-gray playlists__descr">Лучшее за&nbsp;всё время</p>
+                </div>
               </li>
               <li data-target="genre-Postpunk" class="playlists__items_active playlists__item col-xl-2 col-lg-4">
                 <img src="./img/flag-gr-br.jpg" alt="отметка исполнитель из Великобритании" class="playlists__country">
                 <img class="playlists__img" src="./img/TheSmiths.jpg" alt="имя исполнителя The Smiths">
                 <div class="playlists__text-container">
-                <p class="playlists__group__name">The Smiths</p>
-                <p class="small-text-gray playlists__descr">
-                  Период 1984&ndash;1988
-                </p>
+                  <p class="playlists__group__name">The Smiths</p>
+                  <p class="small-text-gray playlists__descr">
+                    Период 1984&ndash;1988
+                  </p>
                 </div>
               </li>
               <li data-target="genre-Postpunk" class="playlists__items_active playlists__item col-xl-2 col-lg-4">
                 <img src="./img/flag-gr-br.jpg" alt="отметка исполнитель из Великобритании" class="playlists__country">
                 <img class="playlists__img" src="./img/NewOrder.jpg" alt="имя исполнителя New Order">
                 <div class="playlists__text-container">
-                <p class="playlists__group__name">New Order</p>
-                <p class="small-text-gray playlists__descr">Хиты</p>
-              </div>
+                  <p class="playlists__group__name">New Order</p>
+                  <p class="small-text-gray playlists__descr">Хиты</p>
+                </div>
               </li>
               <li data-target="genre-Postpunk" class="playlists__items_active playlists__item col-xl-2 col-lg-4">
                 <img src="./img/flag-gr-br.jpg" alt="отметка исполнитель из Великобритании" class="playlists__country">
                 <img class="playlists__img" src="./img/Bauhaus.jpg" alt="имя исполнителя Bauhaus">
                 <div class="playlists__text-container">
-                <p class="playlists__group__name">Bauhaus</p>
-                <p class="small-text-gray playlists__descr">Все синглы</p></div>
+                  <p class="playlists__group__name">Bauhaus</p>
+                  <p class="small-text-gray playlists__descr">Все синглы</p>
+                </div>
               </li>
               <li data-target="genre-hardcore" class="playlists__item col-xl-2 col-lg-4">
                 <img src="./img/flag-gr-br.jpg" alt="отметка исполнитель из Великобритании" class="playlists__country">
                 <img class="playlists__img" src="./img/GangOfFour.jpg" alt="имя исполнителя Gang Of Four">
                 <div class="playlists__text-container">
-                <p class="playlists__group__name">Gang Of Four</p>
-                <p class="small-text-gray playlists__descr">
-                  3&nbsp;последних альбома
-                </p>
+                  <p class="playlists__group__name">Gang Of Four</p>
+                  <p class="small-text-gray playlists__descr">
+                    3&nbsp;последних альбома
+                  </p>
                 </div>
               </li>
             </ul>
@@ -2471,7 +2480,7 @@
           <div class="playlists__text-copy col-lg-12">
             <p class="broadcasts__text playlists__text playlists__text-line">
               Раздел &laquo;Плейлисты&raquo; может содержать
-              информацию, не&nbsp;предназначенную 
+              информацию, не&nbsp;предназначенную
               для&nbsp;несовершеннолетних
             </p>
             <p class="broadcasts__text playlists__text playlists__text-img">
@@ -2556,14 +2565,16 @@
               Нам важен каждый слушатель,
               поэтому вы&nbsp;можете поделиться обратной
               связью о&nbsp;наших предеачах, темах,
-              подборках и&nbsp;вообще обо всём! <br class="product__br-text"> Это можно
+              подборках и&nbsp;вообще обо всём! <br class="product__br-text about__br-text"> Это можно
               сделать либо написав нам в&nbsp;форме ниже,
               либо кликнув на&nbsp;наши соцсети в&nbsp;подвале
               сайта. Спасибо! Услышимся!:)
             </p>
           </div>
-          <div class="about__img-line col-lg-2"></div>
-          <div class="about__img-star col-lg-2"></div>
+          <div class="about__img-container row col-xl-5 col-lg-4">
+            <div class="about__img-line col-lg-5"></div>
+            <div class="about__img-star col-lg-6 col-md-3"></div>
+          </div>
         </div>
         <div class="row slider">
           <div class="swiper" aria-label="слайдер">
